@@ -28,7 +28,7 @@ export default function Home() {
         </div>
 
         <div className={styles.containerBackToTopButton}>
-          <a className={styles.backToTopButton} href='#' />
+          <a className={styles.backToTopButton} href='#'></a>
         </div>  
       </main>
     </>

@@ -3,17 +3,17 @@ import styles from '@/styles/Navbar.module.css'
 
 
 export default function Navbar() {
-    return (
+    return(
         <>
           <ul className={styles.myNavbar}>
             <li>
-              <Link href='#about'>ABOUT</Link>
+              <Link href='#about' scroll={false}>ABOUT</Link>
             </li>
             <li>
-              <Link href='#menu'>MENU</Link>
+              <Link href='#menu' scroll={false}>MENU</Link>
             </li>
             <li>
-              <Link href='#map'>HOW TO FIND US</Link>
+              <Link href='#map' scroll={false}>HOW TO FIND US</Link>
             </li>
           </ul>
         </>
