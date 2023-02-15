@@ -1,0 +1,8 @@
+.myFooter {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.contact {
+  font-family: 'Roboto mono', monospace;
+}

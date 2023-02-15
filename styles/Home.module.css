@@ -2,53 +2,8 @@
   display: grid;
   grid-template-columns: auto 0px;
 }
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
-  height: 164px;
-  background-color: rgba(255 181 199);
-  border-bottom: .13rem solid #00647b;
-}
 
-.myNavbar {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: rgba(0 183 225);
-  height: 50px;
-  border-bottom: .13rem solid rgba(255 181 199);
-  font-family: 'Roboto mono', monospace;
-  font-weight: 500;
-  font-size: large;
-  color: #fff700;
-  list-style: none;
-}
-.about {
-  font-family: 'Roboto mono', monospace;
-  display: flex;
-}
-.menu {
-  font-family: 'Roboto mono', monospace;
-}
-.map {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'Roboto mono', monospace;
-  border :0;
-}
-.myFooter {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-.contact {
-  font-family: 'Roboto mono', monospace;
-}
-
-.containerTop {
+.containerBackToTopButton {
   --offset: 100px;
   --fade: 120px;
   
@@ -59,7 +14,7 @@
   align-items: flex-end;
   -webkit-mask:linear-gradient(#0000 calc(100vh + var(--offset)),#000 calc(100vh + var(--offset) + var(--fade)));
 }
-.top {
+.backToTopButton {
   position: sticky;
   bottom: 20px;      
   margin-right:10px; 
@@ -70,7 +25,7 @@
   background: rgba(255 181 199);
   border-radius:10px;
 }
-.top:before {
+.backToTopButton:before {
   content:"";
   position:absolute;
   inset:30%;

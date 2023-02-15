@@ -1,10 +1,12 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import Header from '../components/Header'
+import Navbar from '../components/Navbar'
+import About from '../components/About'
+import Menu from '../components/Menu'
+import Map from '../components/Map'
+import Footer from '../components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -17,170 +19,18 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div>
-          <div className={styles.header}>
-            <Image
-              className={styles.logo}
-              src='/liaskitchenlogo.png'
-              alt='Lias Kitchen logo'
-              width={310}
-              height={133}
-              priority
-          />
-          <a 
-            href='https://wolt.com/en/deu/berlin/restaurant/lias-kitchen-100-vegan?gclid=Cj0KCQiA1KiBBhCcARIsAPWqoSqEYFkiI27H5r1v_tdzeUY7imZcQWS3wIFJ23sFqJT4eF5eQvnqPrsaAth1EALw_wcB'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <Image
-              src='/wolt-icon.png'
-              alt='Wolt logo'
-              width={60}
-              height={33.75}
-              priority
-            />
-          </a>
+          <Header />
+          <Navbar />
+          <About />
+          <Menu />
+          <Map />
+          <Footer />
         </div>
 
-        <nav className='navbar navbar-default'>
-          <ul className={styles.myNavbar}>
-            <li>
-              <Link href='#about'>ABOUT</Link>
-            </li>
-            <li>
-              <Link href='#menu'>MENU</Link>
-            </li>
-            <li>
-              <Link href='#map'>HOW TO FIND US</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <section id='about' className={styles.about}>
-          <div>
-            <h1>OUR PHILOSOPHY</h1>
-            <h2>Fast Food  ≠ Junk Food</h2> 
-            <p>At Lia`s Kitchen, we make delicious, homemade, healthy,
-            and satisfying vegan fast food for reasonable prices. 
-            We offer 6 different kinds of large (140 grams), homemade patties, 
-            with various homemade special sauces. You can also come and enjoy 
-            the most refreshing, versatile, and satisfying salads, all made 
-            from freshly cut vegetables. <br></br>All made and served with love,
-              fun and the highest quality standards.
-            </p>
-            <Image 
-              src='/shake-section-1.jpg'
-              alt='shake'
-              width={333.25}
-              height={243.75}
-              priority
-              />
-          </div>
-          <Image 
-              src='/burger-section-1.jpg'
-              alt='burger'
-              width={227.5}
-              height={341.5}
-            priority
-          />
-        </section>
-
-        <section id='menu' className={styles.menu}>
-          <h1>MENU</h1>
-          <h2>BURGER</h2>
-          <p>Smokey BBQ Mushroom Burger - 6,90 € 
-            <br></br>Portobello-Champignon-Bulette mit geräucherter BBQ-Ahorn-Soße, Mayo, Salat,Tomate, Gewürzgurke,  Zwiebel und Rucola. 
-            <br></br>Chili-Bean Burger- 6,90 € 
-            <br></br>Schwarze-Bohnen-Bulette mit hausgemachter Chili-Soße, Mayo, Salat,Tomate, Gewürzgurke, Zwiebel und  Rucola. 
-            <br></br>Quinoa-Lentil Burger - 7,90 € 
-            <br></br>Quinoa-Linsen-Bulette mit geschmackvoller Erdnuss-Creme, Mayo, Salat,Tomate, Gewürzgurke, Zwiebel  und Rucola. 
-            <br></br>Oyster-Shiitake Mushroom Burger - 8,90 € (glutenfrei auf Nachfrage) Hausgemachte Frikadelle mit Austernpilzen, Shiitake und schwarzen Linsen mit hausgemachter Senfsoße, Mayo, Salat,Tomate, Gewürzgurke, Zwiebel und Rucola.
-            <br></br>Chicken Burger Classic - 7,90 € 
-            <br></br>Hausgemachte Seitan-Streifen, hausgemachter Feta-Käse, marinierte geröstete Paprika, Rucola, Mayo und  Chili-Soße. 
-            <br></br>Chicken Guacamole Burger - 7,90 € 
-            <br></br>Hausgemachte Seitan-Streifen, Guacamole, eingelegte rote Zwiebeln, Rucola und Mayo.
-          </p>
-​          <h2>Große Salate</h2>
-          <p>Quinoa, Berries und Nüsse - 8,90 € Bunter Quinoa, gemischter Blattsalat, Gojibeeren, Cranberries,  Granatapfel, Pekan- und Walnüsse, Radieschen,  Frühlingszwiebeln und getrockneten Tomaten. Serviert mit  Balsamico-Vinaigrette.  
-          <br></br>Chicken Stripes Salat - 7,90 € 
-          <br></br>Knusprig frittierte, hausgemachte Seitan-Streifen, Salatmix,  Cherrytomaten, Gurke, rote Zwiebeln und Radieschen.  Serviert mit weißer Balsamico-Vinaigrette. 
-          <br></br>Lia´s Salat - 8.90
-          <br></br>Getrocknete Feigen, Aprikosen und Pflaumen, gemischter Blattsalat,  Pekan- und Walnüsse, Kürbiskerne, hausgemachter Feta Käse. Serviert mit Orangen -Granatapfel-Vinaigrette.
-          </p>
-​          <h2>BEILAGEN</h2>
-          <p>Pommes - 3,00 € 
-          <br></br>Süßkartoffel-Pommes - 4,00 €
-          <br></br>Nuggets mit BBQ-Dip - 4,00 €
-          <br></br>Krautsalat - 2,00 €
-          </p>
-        </section>
-
-        <section id='map' className={styles.map}>
-          <h1>HOW TO FIND US</h1>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8402.37469625939!2d13.408222695151627!3d52.53476249007777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e024246ac83%3A0x3de6622d0dadc7b1!2zTGlh4oCZcyBLaXRjaGVu!5e0!3m2!1sde!2sde!4v1676043410283!5m2!1sde!2sde"
-            width="600"
-            height="450"
-            /* style="border:0;"
-            allowfullscreen="" */
-            loading="lazy"
-            // referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </section>
-
-        <footer className={styles.myFooter}>
-          <p className={styles.contact}>
-            Kollwitzstrasse 47, 10405 Berlin,
-            <br></br>Monday-Thursday 17:00-22:00
-            <br></br>Friday-Sunday 12:00-:22:00
-            <br></br>+491634648436
-          </p> 
-          {/* <a
-            href='https://liaskitchen.jetzt-bestellen.menu/'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <p>pickup order</p>
-          </a> */}
-          <a
-            href='https://www.happycow.net/reviews/lias-kitchen-berlin-82729'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <Image
-              src='/happy-cow-logo-400x400.webp'
-              alt='Happy Cow logo'
-              width={75}
-              height={75}
-              priority
-            />
-          </a>
-          <a
-            href='https://www.instagram.com/liaskitchenberlin/?hl=de'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <Image
-              src='/insta.jfif'
-              alt='Instagram logo'
-              width={50}
-              height={50}
-              priority
-            />
-          </a>
-          </footer>
-        </div>
-
-      <div className={styles.containerTop}>
-        <a
-          className={styles.top}
-          href='#'
-        >
-        </a> 
-      </div>  
-        
+        <div className={styles.containerBackToTopButton}>
+          <a className={styles.backToTopButton} href='#' />
+        </div>  
       </main>
-
-      
     </>
   )
 }
