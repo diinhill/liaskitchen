@@ -18,13 +18,11 @@
 .backToTopButton {
   position: sticky;
   bottom: 20px;      
-  margin-right:10px; 
-  
-  /* visual styling */
+  margin-right: 10px; 
   width:100%;
-  aspect-ratio:1;
+/*   aspect-ratio:1;
   background: rgba(255 181 199);
-  border-radius:10px;
+  border-radius:10px; */
 }
 .backToTopButton:before {
   content:"";

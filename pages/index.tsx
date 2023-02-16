@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
@@ -28,7 +29,14 @@ export default function Home() {
         </div>
 
         <div className={styles.containerBackToTopButton}>
-          <a className={styles.backToTopButton} href='#'></a>
+          <a className={styles.backToTopButton} href='#'>
+            <Image
+              src='/burgerface.png'
+              alt='back to top burger button'
+              width={51.75}
+              height={53.4}
+            />
+          </a>
         </div>  
       </main>
     </>

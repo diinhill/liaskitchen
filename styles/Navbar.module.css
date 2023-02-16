@@ -1,13 +1,18 @@
-.myNavbar {
+.navbar {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: rgba(0 183 225);
+  background-color: whitesmoke;
   height: 50px;
-  border-bottom: .13rem solid rgba(255 181 199);
-  font-family: 'Roboto mono', monospace;
-  font-weight: 500;
-  font-size: large;
-  color: #fff700;
+  border-bottom: 1.13rem solid #19155a;
   list-style: none;
+  position: sticky;
+  top: 0px;
+}
+.navLink {
+  text-decoration: none;
+  color:black;
+  font-family: 'Roboto mono', monospace;
+  font-weight: 600;
+  font-size: larger;
 }
