@@ -1,8 +1,8 @@
-.headerContainer {
+/* .headerContainer {
   width: 100%;
   height: 400px;
   background:  #ff7459;
-}
+} */
 .headerClipPathCircle {
   position: absolute;
   width: 100%;
@@ -69,7 +69,7 @@
   animation-iteration-count: infinite;
 }
 
-@keyframes spin {
+/* @keyframes spin {
   0% {
     transform: rotate(0deg);
   }
@@ -77,8 +77,8 @@
     transform: rotate(360deg);
   }
 }
-.basketLogoClicked {
+#basketLogoClicked {
   animation: spin 1s;
   animation-iteration-count: infinite linear;
-}
+} */
   

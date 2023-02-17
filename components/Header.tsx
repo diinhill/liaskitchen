@@ -2,20 +2,10 @@ import Image from 'next/image'
 import styles from '@/styles/Header.module.css'
 
 
-const changeClass = () => {
-  let basketLogo = document.getElementById('basketLogo')?.className
-  console.log(basketLogo)
-  if (basketLogo == 'basketLogo') {
-    basketLogo = 'basketLogoClicked'
-  } else {
-    basketLogo = 'basketLogo'
-  }
-}
-
 export default function Header() {
     return (
       <>
-        <div className={styles.headerContainer}>
+        <div className='top-0 left-0 w-screen h-48 md:h-64 bg-primary'>
           <div className={styles.headerClipPathCircle}></div>
           <div className={styles.headerClipPathPolygon}></div>
           <div className={styles.header}>
@@ -47,7 +37,6 @@ export default function Header() {
                 width={214}
                 height={200}
                 priority
-                onClick={() => changeClass()}
               />
             </div>
             <div className={styles.kitchenLogoContainer}>
