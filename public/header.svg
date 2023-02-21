@@ -1,43 +1,15 @@
-import Image from 'next/image'
-import styles from '@/styles/Header.module.css'
-
-declare var ResizeObserver: {
-    new (callback: ResizeObserverCallback): ResizeObserver;
-    prototype: ResizeObserver;
-}
-
-export default function Header(): JSX.Element {
-
-  function resetViewbox(e: any) {
-    const box = document.getElementById('box')
-    box?.setAttribute('viewBox', '0 0' + ' ' + e[0].contentBoxSize[0].inlineSize + ' ' + e[0].contentBoxSize[0].blockSize)
-    console.log('new viewBox: ', box?.getAttribute('viewBox'))
-  }
-
-
-  let fluid
-
-  if (typeof document !== 'undefined') {
-    // will run in client's browser only
-    fluid = document.getElementById('fluid')
-  }
-  
-  fluid ? new ResizeObserver(resetViewbox).observe(fluid) : console.error
-
-
- 
-    return (
-      <>
-        <div className='inline-grid grid-cols-12 top-0 left-0 w-screen h-56 md:h-72 lg:h-96 bg-primary'>
-          <div id='fluid' className={styles.headerCurve}>
-            <svg id='box' viewBox='0 0 390 220'>
-              <g id="Layer_5">
-	              <path fill="#FF7459" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" d="M390,220H0c0,0,52.667-77.07,105.333-77.07
-		            S234,220,390,220z"/>
-              </g>
-              <g id="Layer_3">
-	            <g>
-		          <g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="390px"
+	 height="220px" viewBox="0 0 390 220" enable-background="new 0 0 390 220" xml:space="preserve">
+<g id="Layer_5">
+	<path fill="#FF7459" stroke="#000000" stroke-width="0.5" stroke-miterlimit="10" d="M390,220H0c0,0,52.667-77.07,105.333-77.07
+		S234,220,390,220z"/>
+</g>
+<g id="Layer_3">
+	<g>
+		<g>
 			<path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M145.278,189.459c-26.585-0.651-53.172-1.3-79.757-1.952
 				c0.312-12.75,0.624-25.499,0.937-38.248c26.585,0.652,53.172,1.302,79.757,1.953
 				C145.901,163.962,145.592,176.712,145.278,189.459z M132.886,174.039c0.089,0.529,0.242,1.059,0.262,1.59
@@ -643,7 +615,7 @@ export default function Header(): JSX.Element {
 	</g>
 </g>
 <g id="Layer_6">
-	<path className={styles.fruitBasketLogoFill} stroke="#231F20" strokeWidth="0.5" stroke-miterlimit="10" d="M235.385,111.599
+	<path fill="none" stroke="#231F20" stroke-width="0.5" stroke-miterlimit="10" d="M235.385,111.599
 		c0,24.838-20.132,44.968-44.965,44.968c-24.835,0-44.967-20.13-44.967-44.968c0-24.833,20.132-44.966,44.967-44.966
 		C215.253,66.633,235.385,86.765,235.385,111.599z"/>
 </g>
@@ -3584,73 +3556,4 @@ export default function Header(): JSX.Element {
 			c-0.203,0.102-1.378-0.004-1.478-0.471C192.816,136.586,192.95,135.751,193.589,135.784z"/>
 	</g>
 </g>
-            </svg>
-
-          {/*   <svg id='box' viewBox='0 0 390 150' preserveAspectRatio='none'>
-                <path d='M 0 130 Q 94 62 140 80 C 176 91 190 136 290 140 L 390 140 L 390 150 L 0 150 Z' className={styles.shapeFill}></path>
-            </svg> */}
-          </div>
-    
-         {/*  <div className='inline-grid grid-rows-3 grid-cols-3 relative col-span-5'>
-            <div className='col-span-1'></div>
-            <div className='row-span-2 col-span-2 justify-self-center self-end'>
-              <Image
-                className=''
-                src='/logo1.png'
-                alt='Lias Kitchen logo'
-                width={67}
-                height={32}
-                priority
-              />
-            </div>
-          </div>
-
-          <div className='inline-grid grid-rows-3 relative col-span-3'>
-            <div className='row-span-1'></div>
-            <div className='row-span-2'>
-              <div className={styles.basketLogoContainer}>
-                <Image
-                  id='basketLogo'
-                  className={styles.basketLogo}
-                  src='/logo3.png'
-                  alt='Lias Kitchen logo'
-                  width={214}
-                  height={200}
-                  priority
-                />
-              </div>
-            </div>
-          </div>
-          
-
-          <div className='inline-grid grid-rows-4 relative col-span-4'>
-            <div className='row-span-3'></div>
-              <div className='row-span-1 self-center'>
-                <Image
-                  className={styles.kitchenLogo}
-                  src='/logo2.png'
-                  alt='Lias Kitchen logo'
-                  width={122}
-                  height={33}
-                  priority
-                />
-              </div>
-          </div> */}
-        {/*    <a 
-              href='https://wolt.com/en/deu/berlin/restaurant/lias-kitchen-100-vegan?gclid=Cj0KCQiA1KiBBhCcARIsAPWqoSqEYFkiI27H5r1v_tdzeUY7imZcQWS3wIFJ23sFqJT4eF5eQvnqPrsaAth1EALw_wcB'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <Image
-                src='/wolt-icon.png'
-                alt='Wolt logo'
-                width={60}
-                height={33.75}
-                priority
-              />
-            </a> */}
-          </div>
-      
-        </>
-    )
-}
+</svg>
