@@ -1,41 +1,31 @@
-.headerCurve {
+.header {
     height: inherit;
     width: inherit;
-    background: whitesmoke;
-    position: absolute;
-/*     display: flex;
-    align-items: flex-end; */
-    
+    position: absolute; 
     overflow: auto;
     resize: both;
-    border: 3px black solid;
-}
- .headerCurve svg {
-    
-}
-.headerCurve .shapeFill {
-    fill: #FF7459;
-    
+    /* border: 3px black solid; */
 }
 
 
-.fruitBasketLogoFill {
+.fruitBasketBorderCircle {
   fill: rgb(109, 173, 229);
-}
-
-
-/* animations for fruitBasketLogo */
-@keyframes color-transit {
-  from {
-    background-color: rgb(109, 173, 229);
-  }
-  to {
-    background-color: rgb(255, 0, 0);
-  }
-}
-.fruitBasketLogoFill:hover {
-  animation: color-transit 0.1s;
+  animation: color-transit 2s ease-in-out;
   animation-iteration-count: infinite;
+}
+
+
+/* animations for fruitBasket */
+@keyframes color-transit {
+  0% {
+    fill: #6dade5;
+  }
+  50% {
+    fill: #ff0000;
+  }
+  100% {
+    fill:rgb(109, 173, 229);
+  }
 }
 
 /* @keyframes spin {

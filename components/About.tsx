@@ -5,7 +5,7 @@ import styles from '@/styles/About.module.css'
 export default function About() {
     return (
         <>
-        <section id='about' className={styles.about}>
+        <section id='about' className='flex bg-primary'>
           <div>
             <h1>OUR PHILOSOPHY</h1>
             <h2>Fast Food  ≠ Junk Food</h2> 

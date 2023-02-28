@@ -1,11 +1,4 @@
-.navbar {
-  border-bottom: 1.13rem solid #19155a;
-  list-style: none;
-}
 .navLink {
   text-decoration: none;
-  color:black;
-  font-family: 'Roboto mono', monospace;
-/*   font-weight: 600;
-  font-size: larger; */
+  font-family: 'Kranky';
 }
