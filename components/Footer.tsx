@@ -5,7 +5,7 @@ import styles from '@/styles/Footer.module.css'
 export default function Footer() {
     return (
         <>
-        <footer className={styles.myFooter}>
+        <footer className='flex justify-center items-end overflow-x-hidden'>
           <p className={styles.contact}>
             Kollwitzstrasse 47, 10405 Berlin,
             <br></br>Monday-Thursday 17:00-22:00

@@ -4,7 +4,14 @@
     position: absolute; 
     overflow: auto;
     resize: both;
-    /* border: 3px black solid; */
+    
+/*     aspect-ratio: 400/250;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    background-image: url('/blobScene.svg'); */
 }
 
 
@@ -20,11 +27,17 @@
   0% {
     fill: #6dade5;
   }
+  25% {
+    fill: #70fb8e;
+  }
   50% {
-    fill: #ff0000;
+    fill: #fff700;
+  }
+  75% {
+    fill: #e56d6d;
   }
   100% {
-    fill:rgb(109, 173, 229);
+    fill: #6dade5;
   }
 }
 

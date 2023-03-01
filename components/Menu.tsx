@@ -4,7 +4,7 @@ import styles from '@/styles/Menu.module.css'
 export default function Menu() {
     return (
         <>
-        <section id='menu' className={styles.menu}>
+        <section id='menu' className='w-screen overflow-x-hidden'>
           <h1>MENU</h1>
           <h2>BURGER</h2>
           <p>Smokey BBQ Mushroom Burger - 6,90 € 

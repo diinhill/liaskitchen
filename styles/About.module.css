@@ -1,4 +1,26 @@
-.about {
-  font-family: 'Roboto mono', monospace;
-  display: flex;
+.aboutText {
+  font-family: 'Kranky';
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
+
+.aboutCircleSeparation {
+  clip-path: circle(62% at 17.9% 46.35%);
+  shape-outside: circle(70% at 17.9% 46.35%);
+  float: left;
+  max-width: 50vw;
+  max-height: 50vw;
+}
+
+.about {
+  aspect-ratio: 450/900;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-image: url('/wavesAboutSection.svg');
+}
+
+
+  
