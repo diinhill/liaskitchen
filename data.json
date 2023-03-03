@@ -1,0 +1,88 @@
+ {"menu": {
+    "burgers": [
+        {
+            "id": 1,
+            "name": "Smokey BBQ Mushroom Burger",
+            "price": 6.9,
+            "description": "Portobello-Champignon-Bulette mit geräucherter BBQ-Ahorn-Soße, Mayo, Salat,Tomate, Gewürzgurke, Zwiebel und Rucola"
+        },
+        {
+            "id": 2,
+            "name": "Chili-Bean Burger",
+            "price": 6.9,
+            "description": "Schwarze-Bohnen-Bulette mit hausgemachter Chili-Soße, Mayo, Salat,Tomate, Gewürzgurke, Zwiebel und Rucola"
+        },
+         {
+            "id": 3,
+            "name": "Quinoa-Lentil Burger",
+            "price": 7.9,
+            "description": "Quinoa-Linsen-Bulette mit geschmackvoller Erdnuss-Creme, Mayo, Salat,Tomate, Gewürzgurke, Zwiebel und Rucola"
+        },
+         {
+            "id": 4,
+            "name": "Oyster-Shiitake Mushroom Burger",
+            "price": 8.9,
+            "description": "Hausgemachte Frikadelle mit Austernpilzen, Shiitake und schwarzen Linsen mit hausgemachter Senfsoße, Mayo, Salat,Tomate, Gewürzgurke, Zwiebel und Rucola (glutenfrei auf Nachfrage)"
+        },
+         {
+            "id": 5,
+            "name": "Chicken Burger Classic",
+            "price": 7.9,
+            "description": "Hausgemachte Seitan-Streifen, hausgemachter Feta-Käse, marinierte geröstete Paprika, Rucola, Mayo und Chili-Soße"
+        },
+         {
+            "id": 6,
+            "name": "Chicken Guacamole Burger",
+            "price": 7.9,
+            "description": "Hausgemachte Seitan-Streifen, Guacamole, eingelegte rote Zwiebeln, Rucola und Mayo"
+        }
+    ],
+    "salads": [
+         {
+            "id": 1,
+            "name": "Quinoa, Berries und Nüsse",
+            "price": 8.9,
+            "description": "Bunter Quinoa, gemischter Blattsalat, Gojibeeren, Cranberries, Granatapfel, Pekan- und Walnüsse, Radieschen, Frühlingszwiebeln und getrockneten Tomaten - serviert mit Balsamico-Vinaigrette"
+        },
+         {
+            "id": 2,
+            "name": "Chicken Stripes Salat",
+            "price": 7.9,
+            "description": "Knusprig frittierte, hausgemachte Seitan-Streifen, Salatmix, Cherrytomaten, Gurke, rote Zwiebeln und Radieschen - serviert mit weißer Balsamico-Vinaigrette"
+        },
+         {
+            "id": 3,
+            "name": "Lia's Salat",
+            "price": 8.9,
+            "description": "Getrocknete Feigen, Aprikosen und Pflaumen, gemischter Blattsalat, Pekan- und Walnüsse, Kürbiskerne, hausgemachter Feta Käse - serviert mit Orangen-Granatapfel-Vinaigrette"
+        }
+    ],
+    "sides": [
+        {
+            "id": 1,
+            "name": "Pommes",
+            "price": 3.0,
+            "description": ""
+        },
+        {
+            "id": 2,
+            "name": "Süßkartoffel-Pommes",
+            "price": 4.0,
+            "description": ""
+        },
+        {
+            "id": 3,
+            "name": "Nuggets mit BBQ-Dip",
+            "price": 4.0,
+            "description": ""
+        },
+        {
+            "id": 4,
+            "name": "Krautsalat",
+            "price": 2.0,
+            "description": ""
+        }
+    ]
+ }
+}
+ 

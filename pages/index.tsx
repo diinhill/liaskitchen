@@ -23,9 +23,10 @@ export default function Home() {
         <div>
           <Header />
           <Navbar />
-          <About />
           <Menu />
           <Map />
+          <About />
+          
           <Footer />
         </div>
 
