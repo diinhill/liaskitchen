@@ -8,7 +8,6 @@ export default function Menu() {
     return (
         <>
         <section id='menu' className='w-screen overflow-x-hidden'>
-          <div className='w-screen h-12'></div>
           <div className={styles.menu}>
             <div>
               <h1 className='text-center pt-6 pb-4 text-white font-[Ranchers] text-xl'>BURGERS</h1>
@@ -30,7 +29,6 @@ export default function Menu() {
             </div>
           </div>
 
-          {/* <div className={styles.curveSeparation}></div> */}
         </section>
         </>
     )

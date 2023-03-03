@@ -9858,7 +9858,7 @@ export default function About() {
 </g>
           </svg> */}
 
-        <div className={styles.about}>
+        <div className=''>
           <div className={styles.aboutCircleSeparation}>
             <Image
               className={styles.aboutBurger}

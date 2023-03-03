@@ -34,9 +34,9 @@ export default function Map(): JSX.Element {
 
           <div className={styles.curveSeparation}></div>
             
-          <div className='flex w-screen justify-center items-end'>
-            <div className='bg-green-400 w-80 flex flex-col mb-4 rounded-b-sm rounded-t-2xl shadow-md shadow-emerald-900'>
-              <h2 className='text-white font-[Dokdo] text-center pt-6 text-2xl'>Want to meet our delicious burgers?</h2>
+          <div className='flex items-center justify-center mt-[-1rem]'>
+            <div className='bg-green-400 w-[21.5rem] flex mb-4 rounded-b-md rounded-t-md shadow-md shadow-emerald-900'>
+              <h2 className='text-white font-[Dokdo] text-center flex items-center text-md padding: 0.5rem'>Want to meet our delicious burgers?</h2>
             <div className={styles.mapResponsive}>
               <iframe id='map'
                 className=''

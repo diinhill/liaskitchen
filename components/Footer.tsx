@@ -5,7 +5,7 @@ import styles from '@/styles/Footer.module.css'
 export default function Footer() {
     return (
         <>
-        <footer className='flex justify-center items-center overflow-x-hidden'>
+        <footer className='flex justify-center items-center overflow-x-hidden mt-[4rem]'>
           {/* <a
             href='https://liaskitchen.jetzt-bestellen.menu/'
             target='_blank'

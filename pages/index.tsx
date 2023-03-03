@@ -20,13 +20,12 @@ export default function Home() {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dokdo&family=Codystar&family=Ranchers&family=Kranky&display=swap"></link>
       </Head>
       <main className={styles.main}>
-        <div>
+        <div className={styles.noiseTexture}>
           <Header />
           <Navbar />
           <Menu />
           <Map />
           <About />
-          
           <Footer />
         </div>
 
