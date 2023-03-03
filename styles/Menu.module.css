@@ -5,5 +5,17 @@
   background-position: center;
   background-size: cover;
 
-  background-image: url('/wavesAboutSection.svg');
+  background-image: url('/wavesMenuSection.svg');
 }
+
+/* .curveSeparation {
+  aspect-ratio: 450/100;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
+  background-image: url('/curveSeparationMenuTransparent.svg');
+}
+ */

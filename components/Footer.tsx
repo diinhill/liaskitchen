@@ -5,13 +5,7 @@ import styles from '@/styles/Footer.module.css'
 export default function Footer() {
     return (
         <>
-        <footer className='flex justify-center items-end overflow-x-hidden'>
-          <p className={styles.contact}>
-            Kollwitzstrasse 47, 10405 Berlin,
-            <br></br>Monday-Thursday 17:00-22:00
-            <br></br>Friday-Sunday 12:00-:22:00
-            <br></br>+491634648436
-          </p> 
+        <footer className='flex justify-center items-center overflow-x-hidden'>
           {/* <a
             href='https://liaskitchen.jetzt-bestellen.menu/'
             target='_blank'
@@ -27,8 +21,8 @@ export default function Footer() {
             <Image
               src='/happy-cow-logo-400x400.webp'
               alt='Happy Cow logo'
-              width={75}
-              height={75}
+              width={50}
+              height={50}
             />
           </a>
           <a
@@ -39,8 +33,8 @@ export default function Footer() {
             <Image
               src='/insta.jfif'
               alt='Instagram logo'
-              width={50}
-              height={50}
+              width={35}
+              height={35}
             />
           </a>
           </footer>

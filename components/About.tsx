@@ -9870,7 +9870,6 @@ export default function About() {
           </div>
             
             <div className={styles.aboutText}>
-              <br></br>
               <h1>OUR PHILOSOPHY</h1>
               <h2>Fast Food  ≠ Junk Food</h2>
               <br></br>

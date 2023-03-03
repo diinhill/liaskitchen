@@ -11,7 +11,7 @@ export default function Navbar() {
               <Link className='no-underline font-[Kranky] px-4 pt-2 hover:text-green-400 active:text-red-400' href='#menu' scroll={false}>menu</Link>
             </li>
             <li className='inline align-middle'>
-              <Link className='no-underline font-[Kranky] px-4 pt-2 hover:text-green-400 active:text-red-400' href='#map' scroll={false}>how to find us</Link>
+              <Link className='no-underline font-[Kranky] px-4 pt-2 hover:text-green-400 active:text-red-400' href='#contact' scroll={false}>how to find us</Link>
             </li>
              <li className='inline align-middle'>
               <Link className='no-underline font-[Kranky] px-4 pt-2 hover:text-green-400 active:text-red-400' href='#about' scroll={false}>about</Link>
