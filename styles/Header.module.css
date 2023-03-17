@@ -4,6 +4,8 @@
     position: absolute; 
     overflow: auto;
     resize: both;
+
+    z-index: 300;
     
 /*     aspect-ratio: 400/250;
     width: 100%;
