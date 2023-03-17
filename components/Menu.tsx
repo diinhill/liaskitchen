@@ -2,6 +2,7 @@
 import styles from '@/styles/Menu.module.css'
 import data from '../data.json'
 import MenuItem from './MenuItem'
+import Image from 'next/image'
 
 
 export default function Menu() {
@@ -22,6 +23,15 @@ export default function Menu() {
               )}
             </div>
             <div>
+              
+              <div id='floatingImgs' className='absolute translate-x-6 -translate-y-4'>
+						    <Image 
+							    src='/friesHeader.png'
+							    alt='fries'
+              		width={100}
+							    height={100}
+						    />
+              </div>
               <h1 className='text-center pt-6 pb-4 text-white font-[Ranchers] text-xl'>SIDES</h1>
               {data.menu.sides.map((side, i) =>
                 <MenuItem key={i} item={side} />
