@@ -4,16 +4,17 @@
     position: absolute; 
     overflow: auto;
     resize: both;
-
-    z-index: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .teethTop {
-  animation: teeth-bite-top 3s;
+  animation: teeth-bite-top 4s;
   animation-iteration-count: infinite;
 }
 .teethBottom {
-  animation: teeth-bite-bottom 3s;
+  animation: teeth-bite-bottom 4s;
   animation-iteration-count: infinite;
 }
 @keyframes teeth-bite-top {
@@ -21,7 +22,7 @@
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(30px);
+    transform: translateY(50px);
   }
   100% {
     transform: translateY(0px);
@@ -32,7 +33,7 @@
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-30px);
+    transform: translateY(-40px);
   }
   100% {
     transform: translateY(0px);
@@ -40,32 +41,46 @@
 }
 
 .logoCircleImage {
-  animation: change-image 6s;
+  animation: change-image 8s;
   animation-iteration-count: infinite;
 }
 @keyframes change-image {
   0% {
     opacity: 0%;
   }
-  25% {
-   opacity: 0%;
-  }
-  26% {
+  30% {
     opacity: 100%;
-  }
+  } 
   50% {
-   opacity: 100%;
-  }
-  75% {
     opacity: 100%;
-  }
-  76% {
-    opacity: 0%;
   }
   100% {
     opacity: 0%;
   }
 }
+
+.containerButton {
+  display: flex;
+  width: 100px;
+}
+.button {
+  position: sticky;
+  width:100%;
+  aspect-ratio:1;
+  /* background: #98d5a24d;
+  border-radius:50px; */
+}
+.button:before {
+  content:"";
+  position:absolute;
+  inset:30%;
+  transform:translateY(-10%) rotate(135deg);
+  border-top:5px solid #e7135d;
+  border-right:5px solid #6dade5;
+}
+
+
+
 
 .iDot {
   animation: bounce 3s;

@@ -10,14 +10,23 @@ export default function Menu() {
         <>
         <section id='menu' className='w-screen overflow-x-hidden'>
           <div className={styles.menu}>
-            <div>
-              <h1 className='text-center pt-6 pb-4 text-white font-[Ranchers] text-xl'>BURGERS</h1>
+            <div className=''>
+              <div className='pt-16 pb-2 flex justify-center'>
+                <Image 
+							    src='/burgerHeader.png'
+							    alt='burger'
+              		width={200}
+                  height={200}
+                  className='border-white border-dotted border-t-2 rounded-full -mb-3.5'
+						    />
+                {/* <h1 className='text-black font-[Codystar] text-2xl bg-white inline rounded'>BURGERS</h1> */}
+              </div>
               {data.menu.burgers.map((burger, i) =>
                 <MenuItem key={i} item={burger} />
               )}
             </div>
             <div>
-              <h1 className='text-center pt-6 pb-4 text-white font-[Ranchers] text-xl'>SALAD BOWLS</h1>
+              <h1 className='text-center pt-6 pb-4 text-white font-[Codystar] text-2xl'>SALAD BOWLS</h1>
               {data.menu.salads.map((salad, i) =>
                 <MenuItem key={i} item={salad} />
               )}
@@ -32,7 +41,7 @@ export default function Menu() {
 							    height={100}
 						    />
               </div>
-              <h1 className='text-center pt-6 pb-4 text-white font-[Ranchers] text-xl'>SIDES</h1>
+              <h1 className='text-center pt-6 pb-4 text-white font-[Codystar] text-2xl'>SIDES</h1>
               {data.menu.sides.map((side, i) =>
                 <MenuItem key={i} item={side} />
               )}

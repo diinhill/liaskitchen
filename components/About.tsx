@@ -5,7 +5,7 @@ import styles from '@/styles/About.module.css'
 export default function About() {
     return (
         <>
-        <section id='about' className='w-screen overflow-x-hidden'>
+        <section id='about' className='w-screen overflow-x-hidden z-30'>
        
          {/*  <svg className='max-w-[50vw]' x="0px" y="0px" width="100%" height="100%" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xmlSpace="preserve">
 <g>

@@ -51,7 +51,7 @@ export default function Map(): JSX.Element {
           </div>
 
           <div className='flex justify-evenly mb-12'>
-          <div className='bg-green-400 w-40 h-40 rounded-sm shadow-emerald-900 shadow-md'>
+            <div className='bg-green-400 w-40 h-40 rounded-sm shadow-emerald-900 shadow-md'>
             <h1 className='text-center pt-3 pb-4 text-white font-[Ranchers] text-xl'>OPENING HOURS</h1>
             <p className='text-center font-[Dokdo] text-blue-600'>
               Monday - Thursday: 

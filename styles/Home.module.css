@@ -4,18 +4,18 @@
   scroll-behavior: smooth;
 }
 
-.main::after {
+/* .main::after {
   content: "";
   height: 100%;
-  opacity: .4;
+  opacity: .1;
   pointer-events: none;
   position: fixed;
   width: 100%;
-  z-index: 201;
+  z-index: 10;
   margin: 0 auto;
   width: 100%;
   background-image: url('/noise.svg');
-}
+} */
 
 .containerBackToTopButton {
   --offset: 100px;
