@@ -1,12 +1,18 @@
 .header {
     height: inherit;
-    width: inherit;
-    position: absolute; 
     overflow: auto;
     resize: both;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+  aspect-ratio: 2000/2000;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-image: url('/waves_yellow.svg');
 }
 
 .teethTop {
@@ -74,9 +80,9 @@
   content:"";
   position:absolute;
   inset:30%;
-  transform:translateY(-10%) rotate(135deg);
-  border-top:5px solid #e7135d;
-  border-right:5px solid #6dade5;
+  transform:translateY(-200%) rotate(135deg);
+  border-top:5px solid #000000;
+  border-right:5px solid #7ECBE9;
 }
 
 

@@ -22,22 +22,22 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.noiseTexture}>
-          <Header />
           <Navbar />
+          <Header />
           <Menu />
           <Map />
-          <About />
+          {/* <About /> */}
           <Footer />
         </div>
 
         <div className={styles.containerBackToTopButton}>
           <a className={styles.backToTopButton} href='#'>
-            <Image
+            {/* <Image
               src='/burgerface.png'
               alt='back to top burger button'
               width={51.75}
               height={53.4}
-            />
+            /> */}
           </a>
         </div>  
       </main>

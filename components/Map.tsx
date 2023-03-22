@@ -1,42 +1,16 @@
 import styles from '@/styles/Map.module.css'
 
 
-type IntersectionObserverCallback = (entries: IntersectionObserverEntry[], observer: IntersectionObserver) => void;
-declare var IntersectionObserver: {
-  new(callback: IntersectionObserverCallback, options?: IntersectionObserverInit): IntersectionObserver;
-}
-
 
 export default function Map(): JSX.Element {
 
 
-  const options:IntersectionObserverInit = { root: null, rootMargin: '-50px', threshold: 0.5 }
-  
-  const startAnimation: IntersectionObserverCallback = ((entries, observer) => {
-    entries.forEach(entry => {
-      let intersecting = entry.isIntersecting
-      intersecting ? entry.target.classList.remove('rounded-full') : entry.target.classList.add('rounded-full')
-      console.log(entry)
-    })
-  })
-  
-  let map
-  if (typeof document !== 'undefined') {
-    // will run in client's browser only
-    map = document.getElementById('map')
-  }
-  map ? new IntersectionObserver(startAnimation, {threshold: 0.5}).observe(map) : console.error 
-
 
     return (
         <>
-        <section id='contact' className='w-screen overflow-x-hidden'>
-
-          <div className={styles.curveSeparation}></div>
+        <section id='contact' className='overflow-x-hidden bg-[#fdfbc8]'>
             
-          <div className='flex items-center justify-center mt-[-1rem]'>
-            <div className='bg-green-400 w-[21.5rem] flex mb-4 rounded-b-md rounded-t-md shadow-md shadow-emerald-900'>
-              <h2 className='text-white font-[Dokdo] text-center flex items-center text-md padding: 0.5rem'>Want to meet our delicious burgers?</h2>
+          <div className='flex items-center justify-center'>
             <div className={styles.mapResponsive}>
               <iframe id='map'
                 className=''
@@ -47,22 +21,21 @@ export default function Map(): JSX.Element {
                 loading="lazy">
                 </iframe>
             </div>
-            </div>
           </div>
 
-          <div className='flex justify-evenly mb-12'>
-            <div className='bg-green-400 w-40 h-40 rounded-sm shadow-emerald-900 shadow-md'>
-            <h1 className='text-center pt-3 pb-4 text-white font-[Ranchers] text-xl'>OPENING HOURS</h1>
-            <p className='text-center font-[Dokdo] text-blue-600'>
+          <div className='flex justify-evenly'>
+            <div className='w-40 h-40'>
+            <h1 className='text-center pt-3 pb-4 text-black font-["Coming_Soon"] text-xl'>OPENING HOURS</h1>
+            <p className='text-center font-["Coming_Soon"] text-blue-600'>
               Monday - Thursday: 
               <br></br>17:00 - 22:00
               <br></br>Friday - Sunday: 
               <br></br>12:00 - 22:00
             </p> 
           </div>
-          <div className='bg-green-400 w-40 h-40 rounded-sm shadow-emerald-900 shadow-md'>
-            <h1 className='text-center pt-3 pb-4 text-white font-[Ranchers] text-xl'>ADDRESS</h1>
-            <p className='text-center font-[Dokdo] text-blue-600'>
+          <div className='w-40 h-40'>
+            <h1 className='text-center pt-3 pb-4 text-black font-["Coming_Soon"] text-xl'>ADDRESS</h1>
+            <p className='text-center font-["Coming_Soon"] text-blue-600'>
               Kollwitzstrasse 47 
               <br></br>10405 Berlin
               <br></br>+49 163 4648436

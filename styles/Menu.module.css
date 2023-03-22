@@ -1,12 +1,12 @@
 .menu {
-  aspect-ratio: 450/900;
+  /* aspect-ratio: 450/900;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   background-image: url('/wavesMenuSection.svg');
-  /* display: flex;
+  display: flex;
   flex-direction: column; */
 }
 

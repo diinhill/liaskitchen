@@ -1,4 +1,17 @@
+.bgWave {
+    height: inherit;
+    
+    overflow: auto;
+    resize: both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-.contact {
-  font-family: 'Roboto mono', monospace;
+  aspect-ratio: 2000/2000;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-image: url('/wave_footer.svg');
 }

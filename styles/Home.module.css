@@ -4,7 +4,7 @@
   scroll-behavior: smooth;
 }
 
-/* .main::after {
+.main::after {
   content: "";
   height: 100%;
   opacity: .1;
@@ -15,7 +15,7 @@
   margin: 0 auto;
   width: 100%;
   background-image: url('/noise.svg');
-} */
+}
 
 .containerBackToTopButton {
   --offset: 100px;
@@ -31,10 +31,10 @@
 .backToTopButton {
   position: sticky;
   bottom: 20px;      
-  margin-right: 10px; 
+  margin-right: 0px; 
   width:100%;
-/*   aspect-ratio:1;
-  background: rgba(255 181 199);
+  aspect-ratio:1;
+  /* background: rgba(255 181 199);
   border-radius:10px; */
 }
 .backToTopButton:before {
@@ -42,8 +42,8 @@
   position:absolute;
   inset:30%;
   transform:translateY(20%) rotate(-45deg);
-  border-top:5px solid #fff;
-  border-right:5px solid #fff;
+  border-top:5px solid #000000;
+  border-right:5px solid #7ECBE9;
 }
 
 
