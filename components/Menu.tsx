@@ -8,10 +8,10 @@ export default function Menu() {
     return (
         <>
         <section id='menu' className='bg-[#fdfbc8]'>
-          <div className='flex flex-wrap justify-evenly pt-36'>
+          <div className='flex flex-wrap justify-evenly pt-36 space-x-6 ml-6'>
 
             {data.menu.map((menuItem, i) =>
-              <div className='space-x-6 mb-20'>
+              <div className='mb-20'>
                 <MenuItem key={i} item={menuItem} />
               </div>
             )}

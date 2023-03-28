@@ -32,63 +32,63 @@
             "name": "Chicken Burger Classic",
             "price": 7.9,
             "description": "Hausgemachte Seitan-Streifen, hausgemachter Feta-Käse, marinierte geröstete Paprika, Rucola, Mayo und Chili-Soße",
-            "image": "/french-fries.png"
+            "image": "/menu/classic-chicken-burger.png"
         },
          {
             "id": 6,
             "name": "Chicken Guacamole Burger",
             "price": 7.9,
             "description": "Hausgemachte Seitan-Streifen, Guacamole, eingelegte rote Zwiebeln, Rucola und Mayo",
-            "image": "/french-fries.png"
+            "image": "/menu/chicken-guacamole-burger.png"
         },
          {
             "id": 1,
             "name": "Quinoa, Berries und Nüsse",
             "price": 8.9,
             "description": "Bunter Quinoa, gemischter Blattsalat, Gojibeeren, Cranberries, Granatapfel, Pekan- und Walnüsse, Radieschen, Frühlingszwiebeln und getrockneten Tomaten - serviert mit Balsamico-Vinaigrette",
-            "image": "/french-fries.png"
+            "image": "/menu/quinoa-berries-salad.png"
         },
          {
             "id": 2,
             "name": "Chicken Stripes Salat",
             "price": 7.9,
             "description": "Knusprig frittierte, hausgemachte Seitan-Streifen, Salatmix, Cherrytomaten, Gurke, rote Zwiebeln und Radieschen - serviert mit weißer Balsamico-Vinaigrette",
-            "image": "/french-fries.png"
+            "image": "/menu/chicken-salad.png"
         },
          {
             "id": 3,
             "name": "Lia's Salat",
             "price": 8.9,
             "description": "Getrocknete Feigen, Aprikosen und Pflaumen, gemischter Blattsalat, Pekan- und Walnüsse, Kürbiskerne, hausgemachter Feta Käse - serviert mit Orangen-Granatapfel-Vinaigrette",
-            "image": "/french-fries.png"
+            "image": "/menu/lias-salad.png"
         },
         {
             "id": 1,
             "name": "Pommes",
             "price": 3.0,
             "description": "",
-            "image": "/french-fries.png"
+            "image": "/menu/french-fries.png"
         },
         {
             "id": 2,
             "name": "Süßkartoffel-Pommes",
             "price": 4.0,
             "description": "",
-            "image": "/french-fries.png"
+            "image": "/menu/sweet-potato-fries.png"
         },
         {
             "id": 3,
             "name": "Nuggets mit BBQ-Dip",
             "price": 4.0,
             "description": "",
-            "image": "/french-fries.png"
+            "image": "/menu/nuggets.png"
         },
         {
             "id": 4,
             "name": "Krautsalat",
             "price": 2.0,
             "description": "",
-            "image": "/french-fries.png"
+            "image": "/menu/krautsalat.png"
         }
     ]
 }

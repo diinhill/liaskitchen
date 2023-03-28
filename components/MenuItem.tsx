@@ -22,8 +22,8 @@ const MenuItem = ( item: MenuItem ) => {
                 </div>    
 
                 <div className='ml-2'>
-                    <h2 className='text-xl font-[Roboto] text-white'>{item.item.name}</h2>
-                    <h3 className='text-xl font-[Roboto] text-white'>{item.item.price}</h3>
+                    <h2 className='text-3xl font-["Annie_Use_Your_Telescope"] text-white'>{item.item.name}</h2>
+                    <h3 className='text-2xl font-["Annie_Use_Your_Telescope"] text-white'>{item.item.price}</h3>
                     {/* {item.item.description != '' ? <p className='text-right pb-6 pt-2 pl-12 pr-6 font-["Coming_Soon"] text-blue-600'>{item.item.description}</p> : <p className='pb-0'></p>} */}
                 </div>
             </div>

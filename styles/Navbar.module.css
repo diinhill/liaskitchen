@@ -4,16 +4,16 @@
   width: inherit;
 }
 .button {
- 
+  margin-left: 1rem;
 }
 
 .dropdownContent {
   display: none;
   position: absolute;
-  background-color: #7ECBE9;
-  width: 90%;
-  box-shadow: 0px 8px 8px 0px #366070;
-  padding: 60px 16px;
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: -8px 4px 2px 2px #18262c80;
+  padding: 16px 16px;
   z-index: 11;
 }
 

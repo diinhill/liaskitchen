@@ -25,8 +25,8 @@ export default function Home() {
           <Navbar />
           <Header />
           <Menu />
-          <Map />
-          {/* <About /> */}
+          {/*<Map />
+           <About /> */}
           <Footer />
         </div>
 

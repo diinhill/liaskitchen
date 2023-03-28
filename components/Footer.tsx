@@ -5,10 +5,12 @@ import styles from '@/styles/Footer.module.css'
 export default function Footer() {
     return (
         <>
-        <footer className='flex justify-center items-center overflow-x-hidden'>
-          <div className={styles.bgWave}>
-
-            <div className='flex items-center'>
+        <footer id='contact' className=''>
+			<div className={styles.bgWave}>
+				<div className='flex justify-center items-center'>
+						
+				<div className=''>
+				<div className='flex items-center justify-center'>
           {/* <a
             href='https://liaskitchen.jetzt-bestellen.menu/'
             target='_blank'
@@ -16,18 +18,6 @@ export default function Footer() {
           >
             <p>pickup order</p>
           </a> */}
-          <a
-            href='https://www.happycow.net/reviews/lias-kitchen-berlin-82729'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <Image
-              src='/happy-cow-logo-400x400.webp'
-              alt='Happy Cow logo'
-              width={50}
-              height={50}
-            />
-          </a>
           <a
             href='https://www.instagram.com/liaskitchenberlin/?hl=de'
             target='_blank'
@@ -39,11 +29,49 @@ export default function Footer() {
               width={35}
               height={35}
             />
-            </a>
-        </div>
+			</a>
+			<a
+            href='https://www.happycow.net/reviews/lias-kitchen-berlin-82729'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <Image
+              src='/happy-cow-logo-400x400.webp'
+              alt='Happy Cow logo'
+              width={50}
+              height={50}
+            />
+          </a>
+        </div>			
 
-          
-<svg x="0px" y="0px"
+					<div className='w-40 h-40'>
+						<h1 className='text-center pt-3 pb-4 text-black font-["Annie_Use_Your_Telescope"] text-2xl'>OPENING HOURS</h1>
+						<p className='text-center font-["Annie_Use_Your_Telescope"] text-black text-xl'>
+						Monday - Thursday: 
+						<br></br>17:00 - 22:00
+						<br></br>Friday - Sunday: 
+						<br></br>12:00 - 22:00
+						</p> 
+					</div>
+					<div className='w-40 h-40 mt-12'>
+						<h1 className='text-center pt-3 pb-4 text-[#7ECBE9] font-["Annie_Use_Your_Telescope"] text-2xl'>ADDRESS</h1>
+						<p className='text-center font-["Annie_Use_Your_Telescope"] text-[#7ECBE9] text-xl'>
+						Kollwitzstrasse 47 
+						<br></br>10405 Berlin
+						<br></br>+49 163 4648436
+						</p> 
+						</div>
+					</div>  	
+
+				
+				</div>
+				
+		
+            
+
+
+					
+					<svg x="0px" y="0px"
 	 width="100%" height="100%" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xmlSpace="preserve">
 <g>
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M18.612,100.115c-5.972,0-11.944-0.004-17.916,0.011
@@ -1096,9 +1124,11 @@ export default function Footer() {
 	<path fill-rule="evenodd" clip-rule="evenodd" fill="#D9F5ED" d="M73.852,33.038c0.318,0.045,0.601,0.167,0.557,0.528
 		c-0.054,0.437-0.396,0.657-0.798,0.707c-0.359,0.044-0.426-0.243-0.433-0.536C73.167,33.272,73.453,33.101,73.852,33.038z"/>
 </g>
-</svg>
+					</svg>
+				
+				</div>
 
-          </div>
+         
           </footer>
         </>
     )

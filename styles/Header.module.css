@@ -79,8 +79,8 @@
 .button:before {
   content:"";
   position:absolute;
-  inset:30%;
-  transform:translateY(-200%) rotate(135deg);
+  inset:35%;
+  transform:translateY(600%) rotate(135deg);
   border-top:5px solid #000000;
   border-right:5px solid #7ECBE9;
 }

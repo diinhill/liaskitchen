@@ -1,7 +1,7 @@
 .bgWave {
     height: inherit;
     
-    overflow: auto;
+    /* overflow: auto; */
     resize: both;
     display: flex;
     flex-direction: column;

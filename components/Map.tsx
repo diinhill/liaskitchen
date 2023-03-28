@@ -10,7 +10,7 @@ export default function Map(): JSX.Element {
         <>
         <section id='contact' className='overflow-x-hidden bg-[#fdfbc8]'>
             
-          <div className='flex items-center justify-center'>
+          {/* <div className='flex items-center justify-center'>
             <div className={styles.mapResponsive}>
               <iframe id='map'
                 className=''
@@ -21,12 +21,12 @@ export default function Map(): JSX.Element {
                 loading="lazy">
                 </iframe>
             </div>
-          </div>
+          </div> */}
 
           <div className='flex justify-evenly'>
             <div className='w-40 h-40'>
             <h1 className='text-center pt-3 pb-4 text-black font-["Coming_Soon"] text-xl'>OPENING HOURS</h1>
-            <p className='text-center font-["Coming_Soon"] text-blue-600'>
+            <p className='text-center font-["Coming_Soon"] text-[#7ECBE9]'>
               Monday - Thursday: 
               <br></br>17:00 - 22:00
               <br></br>Friday - Sunday: 
@@ -35,12 +35,12 @@ export default function Map(): JSX.Element {
           </div>
           <div className='w-40 h-40'>
             <h1 className='text-center pt-3 pb-4 text-black font-["Coming_Soon"] text-xl'>ADDRESS</h1>
-            <p className='text-center font-["Coming_Soon"] text-blue-600'>
+            <p className='text-center font-["Coming_Soon"] text-[#7ECBE9]'>
               Kollwitzstrasse 47 
               <br></br>10405 Berlin
               <br></br>+49 163 4648436
             </p> 
-            </div>
+          </div>
           </div>
 
         </section>
