@@ -4,28 +4,28 @@
             "name": "Smokey BBQ Mushroom Burger",
             "price": 6.9,
             "description": "Portobello-Champignon-Bulette mit geräucherter BBQ-Ahorn-Soße, Mayo, Salat,Tomate, Gewürzgurke, Zwiebel und Rucola",
-            "image": "/french-fries.png"
+            "image": "/menu/classic-chicken-burger.png"
         },
         {
             "id": 2,
             "name": "Chili-Bean Burger",
             "price": 6.9,
             "description": "Schwarze-Bohnen-Bulette mit hausgemachter Chili-Soße, Mayo, Salat,Tomate, Gewürzgurke, Zwiebel und Rucola",
-            "image": "/french-fries.png"
+            "image": "/menu/classic-chicken-burger.png"
         },
          {
             "id": 3,
             "name": "Quinoa-Lentil Burger",
             "price": 7.9,
             "description": "Quinoa-Linsen-Bulette mit geschmackvoller Erdnuss-Creme, Mayo, Salat,Tomate, Gewürzgurke, Zwiebel und Rucola",
-            "image": "/french-fries.png"
+            "image": "/menu/classic-chicken-burger.png"
         },
          {
             "id": 4,
             "name": "Oyster-Shiitake Mushroom Burger",
             "price": 8.9,
             "description": "Hausgemachte Frikadelle mit Austernpilzen, Shiitake und schwarzen Linsen mit hausgemachter Senfsoße, Mayo, Salat,Tomate, Gewürzgurke, Zwiebel und Rucola (glutenfrei auf Nachfrage)",
-            "image": "/french-fries.png"
+            "image": "/menu/classic-chicken-burger.png"
         },
          {
             "id": 5,
