@@ -65,12 +65,9 @@ export default function Footer() {
 
 				
 				</div>
-				
-		
-            
 
 
-					
+				<div className='sm:w-[80%] md:w-[70%] lg:w-[60%] xl:w-[50%] 2xl:w-[40%]'>	
 					<svg x="0px" y="0px"
 	 width="100%" height="100%" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xmlSpace="preserve">
 <g>
@@ -1125,6 +1122,7 @@ export default function Footer() {
 		c-0.054,0.437-0.396,0.657-0.798,0.707c-0.359,0.044-0.426-0.243-0.433-0.536C73.167,33.272,73.453,33.101,73.852,33.038z"/>
 </g>
 					</svg>
+				</div>
 				
 				</div>
 
