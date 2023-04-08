@@ -20,7 +20,7 @@ export default function Navbar() {
 		
 			</button>
             <div className={styles.dropdownContent}>
-              <ul className='text-[#7ECBE9] text-2xl text-center list-none'>
+              <ul className='text-[#7ECBE9] bg-[#fffff6] text-2xl text-center list-none'>
                 <li className=''>
 								<Link className='z-30 no-underline font-["Annie_Use_Your_Telescope"] hover:text-[#a00242] active:text-[#a00242] hover:text-4xl active:text-4xl '
 									href='#menu' scroll={false}>menu</Link>

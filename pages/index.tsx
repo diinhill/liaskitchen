@@ -1,11 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
-import About from '../components/About'
 import Menu from '../components/Menu'
-import Map from '../components/Map'
 import Footer from '../components/Footer'
 
 
@@ -25,20 +22,11 @@ export default function Home() {
           <Navbar />
           <Header />
           <Menu />
-          {/*<Map />
-           <About /> */}
           <Footer />
         </div>
 
         <div className={styles.containerBackToTopButton}>
-          <a className={styles.backToTopButton} href='#'>
-            {/* <Image
-              src='/burgerface.png'
-              alt='back to top burger button'
-              width={51.75}
-              height={53.4}
-            /> */}
-          </a>
+          <a className={styles.backToTopButton} href='#' />
         </div>  
       </main>
     </>

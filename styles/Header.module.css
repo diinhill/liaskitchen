@@ -80,7 +80,7 @@
   content:"";
   position:absolute;
   inset:35%;
-  transform:translateY(600%) rotate(135deg);
+  transform:translateY(300%) rotate(135deg);
   border-top:5px solid #000000;
   border-right:5px solid #7ECBE9;
 }
