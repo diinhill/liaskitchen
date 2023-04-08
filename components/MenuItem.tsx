@@ -27,16 +27,17 @@ const MenuItem = ( item: MenuItem ) => {
                     <h3 className='text-2xl font-["Annie_Use_Your_Telescope"] text-white'>{item.item.price}</h3>
                 </div>
 
-                <div className={styles.dropdown}>
-                    <div className={styles.containerButton}>
-                        <button className={styles.button} />
-                    </div> 
-                    <div className={styles.dropdownContent}>
-                        <div className='bg-[#7ECBE9] rounded-sm shadow-[#366477] shadow-md'>
-                            <p className='text-2xl m-2 p-2 text-white font-["Annie_Use_Your_Telescope"]'>{item.item.description}</p>
+                {item.item.description != '' ?
+                    <div className={styles.dropdown}>
+                        <div className={styles.containerButton}>
+                            <button className={styles.button} />
                         </div>
-                    </div>
-                </div>
+                        <div className={styles.dropdownContent}>
+                            <div className='bg-[#7ECBE9] rounded-sm shadow-[#366477] shadow-md'>
+                                <p className='text-2xl m-2 p-2 text-white font-["Annie_Use_Your_Telescope"]'>{item.item.description}</p>
+                            </div>
+                        </div>
+                    </div> : null}
                
             </div>
         </>   
