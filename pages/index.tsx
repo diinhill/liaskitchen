@@ -4,9 +4,22 @@ import Header from '../components/Header'
 import Navbar from '../components/Navbar'
 import Menu from '../components/Menu'
 import Footer from '../components/Footer'
+import { useEffect, useRef } from 'react'
 
 
 export default function Home() {
+
+    const menuRef = useRef<null | HTMLDivElement>(null)
+    const executeScroll = () => menuRef?.current  && menuRef.current.scrollIntoView({
+      block: 'center',
+      behavior: 'smooth',
+    })   
+  
+    useEffect(() => {
+      executeScroll() 
+    }, [])
+  
+
   return (
     <>
       <Head>
@@ -21,7 +34,8 @@ export default function Home() {
         <div className={styles.noiseTexture}>
           <Navbar />
           <Header />
-          <Menu />
+          <div className='-mb-[60%] sm:-mb-[20%] md:-mb-[15%] lg:-mb-[10%]' ref={menuRef}/>
+          <Menu  />
           <Footer />
         </div>
 

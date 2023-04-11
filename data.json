@@ -1,93 +1,125 @@
- {"menu": [
+{"menu": [
         {
             "id": 1,
             "name": "Smokey BBQ Mushroom Burger",
-            "price": 6.9,
-            "description": "Portobello-Champignon-Bulette mit geräucherter BBQ-Ahorn-Soße, Mayo, Salat,Tomate, Gewürzgurke, Zwiebel und Rucola",
+            "price": 7.4,
+            "descriptionDeutsch": "Portobello-Champignon-Bulette mit geräucherter BBQ-Ahorn-Soße, Mayo, Salat, Tomate, Gewürzgurke, Zwiebeln und Rucola",
+            "descriptionEnglish": "Portobello-champignons patty with a maple-smoked BBQ sauce",
             "image": "/menu/classic-chicken-burger.png"
         },
         {
             "id": 2,
             "name": "Chili-Bean Burger",
-            "price": 6.9,
-            "description": "Schwarze-Bohnen-Bulette mit hausgemachter Chili-Soße, Mayo, Salat,Tomate, Gewürzgurke, Zwiebel und Rucola",
+            "price": 7.2,
+            "descriptionDeutsch": "Schwarze-Bohnen-Bulette mit hausgemachter Chili-Soße, Mayo, Salat,Tomate, Gewürzgurke, Zwiebeln und Rucola",
+            "descriptionEnglish": "Black bean patty with a homemade spicy chilli sauce",
             "image": "/menu/classic-chicken-burger.png"
         },
          {
             "id": 3,
             "name": "Quinoa-Lentil Burger",
             "price": 7.9,
-            "description": "Quinoa-Linsen-Bulette mit geschmackvoller Erdnuss-Creme, Mayo, Salat,Tomate, Gewürzgurke, Zwiebel und Rucola",
+            "descriptionDeutsch": "Quinoa-Linsen-Bulette mit geschmackvoller Erdnuss-Creme, Mayo, Salat,Tomate, Gewürzgurke, Zwiebeln und Rucola",
+            "descriptionEnglish": "Quinoa-lentils patty with a delicious creamy peanut sauce",
             "image": "/menu/classic-chicken-burger.png"
         },
-         {
+        {
             "id": 4,
-            "name": "Oyster-Shiitake Mushroom Burger",
-            "price": 8.9,
-            "description": "Hausgemachte Frikadelle mit Austernpilzen, Shiitake und schwarzen Linsen mit hausgemachter Senfsoße, Mayo, Salat,Tomate, Gewürzgurke, Zwiebel und Rucola (glutenfrei auf Nachfrage)",
+            "name": "Queen'Noa-Lentils Burger",
+            "price": 9.5,
+            "descriptionDeutsch": "Quinoa-Linsen-Bulette, marinierte gegrillte Portobello-Pilze, mit geräucherter BBQ-Ahorn-Soße - Extras: 'NoKäse'/ Jalapenos (1€)",
+            "descriptionEnglish": "Quinoa-lentils patty, marinated grilled portobello mushroom, with a maple smoked BBQ sauce - Extras: vegan cheeze/ jalapeños (1€)",
             "image": "/menu/classic-chicken-burger.png"
         },
-         {
+        {
             "id": 5,
-            "name": "Chicken Burger Classic",
-            "price": 7.9,
-            "description": "Hausgemachte Seitan-Streifen, hausgemachter Feta-Käse, marinierte geröstete Paprika, Rucola, Mayo und Chili-Soße",
+            "name": "Chi'ken Burger Blue Cheeze",
+            "price": 8.2,
+            "descriptionDeutsch": "Hausgemachte Seitan-Streifen, mit Blauschimmel 'Nokäse', karamellisierten Zwiebeln, Rucola und Mayo",
+            "descriptionEnglish": "Homemade seitan stripes with vegan Blue Cheeze, caramelised onions, mayo, and rocket",
             "image": "/menu/classic-chicken-burger.png"
         },
          {
             "id": 6,
-            "name": "Chicken Guacamole Burger",
-            "price": 7.9,
-            "description": "Hausgemachte Seitan-Streifen, Guacamole, eingelegte rote Zwiebeln, Rucola und Mayo",
+            "name": "Oyster-Shiitake Mushroom Burger",
+            "price": 8.9,
+            "descriptionDeutsch": "Hausgemachte Frikadelle mit Austernpilzen, Shiitake und schwarzen Linsen mit hausgemachter Senfsoße, Mayo, Salat,Tomate, Gewürzgurke, Zwiebeln und Rucola (glutenfrei auf Nachfrage)",
+            "descriptionEnglish": "Gluten free patty made out of lentils, oyster mushrooms & shiitake mushrooms, with homemade mustard sauce - gluten free bun upon request",
+            "image": "/menu/classic-chicken-burger.png"
+        },
+         {
+            "id": 7,
+            "name": "Chi'ken Burger Classic",
+            "price": 8.2,
+            "descriptionDeutsch": "Hausgemachte Seitan-Streifen, hausgemachter veganer Feta 'Nokäse', marinierte geröstete Paprika, Rucola, Mayo und Chili-Soße",
+            "descriptionEnglish": "Homemade seitan stripes with vegan feta-cheeze, marinated roasted peppers, rochet, mayo and chilli sauce",
+            "image": "/menu/classic-chicken-burger.png"
+        },
+         {
+            "id": 8,
+            "name": "Chi'ken Guacamole Burger",
+            "price": 8.2,
+            "descriptionDeutsch": "Hausgemachte Seitan-Streifen, Guacamole, eingelegte rote Zwiebeln, Rucola und Mayo",
+            "descriptionEnglish": "Homemade seitan stripes with guacamole, pickled onions, mayo, and rocket",
             "image": "/menu/chicken-guacamole-burger.png"
         },
          {
-            "id": 1,
+            "id": 9,
             "name": "Quinoa, Berries und Nüsse",
             "price": 8.9,
-            "description": "Bunter Quinoa, gemischter Blattsalat, Gojibeeren, Cranberries, Granatapfel, Pekan- und Walnüsse, Radieschen, Frühlingszwiebeln und getrockneten Tomaten - serviert mit Balsamico-Vinaigrette",
+            "descriptionDeutsch": "Bunter Quinoa, gemischter Blattsalat, Gojibeeren, Cranberries, Granatapfel, Pekan- und Walnüsse, Radieschen, Frühlingszwiebeln und getrockneten Tomaten - serviert mit Balsamico-Vinaigrette",
+            "descriptionEnglish": "Colourful quinoa, mixed leaves, goji berries, cranberries, Pomegranate, pecan, walnuts, radish, spring onions, and dried tomatoes - served with balsamic-vinaigrette",
             "image": "/menu/quinoa-berries-salad.png"
         },
          {
-            "id": 2,
-            "name": "Chicken Stripes Salat",
+            "id": 10,
+            "name": "Chi'ken Stripes Salat",
             "price": 7.9,
-            "description": "Knusprig frittierte, hausgemachte Seitan-Streifen, Salatmix, Cherrytomaten, Gurke, rote Zwiebeln und Radieschen - serviert mit weißer Balsamico-Vinaigrette",
+            "descriptionDeutsch": "Knusprig frittierte, hausgemachte Seitan-Streifen, Salatmix, Cherrytomaten, Gurke, rote Zwiebeln und Radieschen - serviert mit weißer Balsamico-Vinaigrette",
+            "descriptionEnglish": "Crunchy fried homemade seitan stripes, lettuce, mixed leaves, cherry tomatoes, cucumber, red onion, carrots and radish - served with white-balsamic-vinaigrette",
             "image": "/menu/chicken-salad.png"
         },
          {
-            "id": 3,
+            "id": 11,
             "name": "Lia's Salat",
             "price": 8.9,
-            "description": "Getrocknete Feigen, Aprikosen und Pflaumen, gemischter Blattsalat, Pekan- und Walnüsse, Kürbiskerne, hausgemachter Feta Käse - serviert mit Orangen-Granatapfel-Vinaigrette",
+            "descriptionDeutsch": "Getrocknete Feigen, Aprikosen und Pflaumen, gemischter Blattsalat, Pekan- und Walnüsse, Kürbiskerne, hausgemachter Feta Käse - serviert mit Orangen-Granatapfel-Vinaigrette",
+            "descriptionEnglish": "Dried figs, apricots and plums, mixed leaves, pecans, walnuts, and homemade feta-cheeze - served with orange-pomegranate-vinaigrette",
             "image": "/menu/lias-salad.png"
         },
         {
-            "id": 1,
+            "id": 12,
             "name": "Pommes",
-            "price": 3.0,
-            "description": "",
+            "price": 3.5,
+            "descriptionDeutsch": "",
             "image": "/menu/french-fries.png"
         },
         {
-            "id": 2,
+            "id": 13,
             "name": "Süßkartoffel-Pommes",
-            "price": 4.0,
-            "description": "",
+            "price": 4.5,
+            "descriptionDeutsch": "",
             "image": "/menu/sweet-potato-fries.png"
         },
         {
-            "id": 3,
+            "id": 14,
             "name": "Nuggets mit BBQ-Dip",
-            "price": 4.0,
-            "description": "",
+            "price": 4.5,
+            "descriptionDeutsch": "",
             "image": "/menu/nuggets.png"
         },
         {
-            "id": 4,
+            "id": 15,
+            "name": "Small Salad",
+            "price": 4.5,
+            "descriptionDeutsch": "",
+            "image": "/menu/krautsalat.png"
+        },
+        {
+            "id": 16,
             "name": "Krautsalat",
-            "price": 2.0,
-            "description": "",
+            "price": 2.5,
+            "descriptionDeutsch": "",
             "image": "/menu/krautsalat.png"
         }
     ]

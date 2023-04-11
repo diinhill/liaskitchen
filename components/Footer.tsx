@@ -5,8 +5,8 @@ import styles from '@/styles/Footer.module.css'
 export default function Footer() {
     return (
         <>
-        <footer id='contact' className=''>
-			<div className={styles.bgWave}>
+        <footer id='contact' className={styles.bgWave}>
+			<div className='flex flex-col items-center justify-end'>
 				<div className='flex justify-center items-center'>
 						
 				<div className=''>
