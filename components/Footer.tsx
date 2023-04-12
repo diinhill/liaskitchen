@@ -7,42 +7,45 @@ export default function Footer() {
         <>
         <footer id='contact' className={styles.bgWave}>
 			<div className='flex flex-col items-center justify-end'>
+					{/* lg:flex-row  lg:justify-center */}
 				<div className='flex justify-center items-center'>
 						
 				<div className=''>
-				<div className='flex items-center justify-center'>
-          {/* <a
-            href='https://liaskitchen.jetzt-bestellen.menu/'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <p>pickup order</p>
-          </a> */}
-          <a
-            href='https://www.instagram.com/liaskitchenberlin/?hl=de'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <Image
-              src='/insta.jfif'
-              alt='Instagram logo'
-              width={35}
-              height={35}
-            />
-			</a>
-			<a
-            href='https://www.happycow.net/reviews/lias-kitchen-berlin-82729'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <Image
-              src='/happy-cow-logo-400x400.webp'
-              alt='Happy Cow logo'
-              width={50}
-              height={50}
-            />
-          </a>
-        </div>			
+					<div className='flex items-center justify-center'>
+								
+						{/* <a
+							href='https://liaskitchen.jetzt-bestellen.menu/'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<p>pickup order</p>
+						</a> */}
+												
+						<a
+							href='https://www.instagram.com/liaskitchenberlin/?hl=de'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<Image
+							src='/insta.jfif'
+							alt='Instagram logo'
+							width={35}
+							height={35}
+							/>
+							</a>
+							<a
+							href='https://www.happycow.net/reviews/lias-kitchen-berlin-82729'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<Image
+							src='/happy-cow-logo-400x400.webp'
+							alt='Happy Cow logo'
+							width={50}
+							height={50}
+							/>
+						</a>
+					</div>			
 
 					<div className='w-40 h-40'>
 						<h1 className='text-center pt-3 pb-4 text-black font-["Annie_Use_Your_Telescope"] text-2xl'>OPENING HOURS</h1>
@@ -60,10 +63,8 @@ export default function Footer() {
 						<br></br>10405 Berlin
 						<br></br>+49 163 4648436
 						</p> 
-						</div>
-					</div>  	
-
-				
+					</div>
+				</div>  	
 				</div>
 
 
@@ -1124,9 +1125,7 @@ export default function Footer() {
 					</svg>
 				</div>
 				
-				</div>
-
-         
+			</div>
           </footer>
         </>
     )

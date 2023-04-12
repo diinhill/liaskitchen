@@ -1,1 +1,8 @@
-<svg id="visual" viewBox="0 0 2000 2000" width="2000" height="2000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><rect x="0" y="0" width="2000" height="2000" fill="#a00242"></rect><path d="M0 251L66.7 247.2C133.3 243.3 266.7 235.7 400 352.7C533.3 469.7 666.7 711.3 800 718.5C933.3 725.7 1066.7 498.3 1200 480.7C1333.3 463 1466.7 655 1600 749C1733.3 843 1866.7 839 1933.3 837L2000 835L2000 0L1933.3 0C1866.7 0 1733.3 0 1600 0C1466.7 0 1333.3 0 1200 0C1066.7 0 933.3 0 800 0C666.7 0 533.3 0 400 0C266.7 0 133.3 0 66.7 0L0 0Z" fill="#fdfbc8" stroke-linecap="round" stroke-linejoin="miter"></path></svg>
+<svg id="visual" viewBox="0 0 2000 2000" width="2000" height="2000"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+    <rect
+        x="0" y="0" width="2000" height="2000" fill="#55ba48"></rect>
+    <path
+        d="M0 251L66.7 247.2C133.3 243.3 266.7 235.7 400 352.7C533.3 469.7 666.7 711.3 800 718.5C933.3 725.7 1066.7 498.3 1200 480.7C1333.3 463 1466.7 655 1600 749C1733.3 843 1866.7 839 1933.3 837L2000 835L2000 0L1933.3 0C1866.7 0 1733.3 0 1600 0C1466.7 0 1333.3 0 1200 0C1066.7 0 933.3 0 800 0C666.7 0 533.3 0 400 0C266.7 0 133.3 0 66.7 0L0 0Z"
+        fill="#fdfbc8" stroke-linecap="round" stroke-linejoin="miter"></path>
+</svg>
