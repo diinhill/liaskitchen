@@ -57,8 +57,8 @@ export default function Footer() {
 						</p> 
 					</div>
 					<div className='w-40 h-40 mt-12'>
-						<h1 className='text-center pt-3 pb-4 text-[#7ECBE9] font-["Annie_Use_Your_Telescope"] text-2xl'>ADDRESS</h1>
-						<p className='text-center font-["Annie_Use_Your_Telescope"] text-[#7ECBE9] text-xl'>
+						<h1 className='text-center pt-3 pb-4 text-black font-["Annie_Use_Your_Telescope"] text-2xl'>ADDRESS</h1>
+						<p className='text-center font-["Annie_Use_Your_Telescope"] text-black text-xl'>
 						Kollwitzstrasse 47 
 						<br></br>10405 Berlin
 						<br></br>+49 163 4648436
