@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from '@/styles/Navbar.module.css'
 
 
@@ -18,25 +19,41 @@ export default function Navbar() {
           </button>
             
           <div className={styles.dropdownContent}>
-            <ul className='text-[#7ECBE9] bg-[#fffff6] text-2xl text-center list-none'>
-              <li className=''>
+            <ul className='text-[#7ECBE9] bg-[#fffff6] text-3xl list-none sm:flex sm:gap-10 sm:justify-center'>
+              <li className={styles.link}>
               <Link className='z-30 no-underline font-["Annie_Use_Your_Telescope"] hover:text-[#a00242] active:text-[#a00242] hover:text-4xl active:text-4xl '
                 href='#menu' scroll={false}>menu</Link>
               </li>
-              <li className=''>
+              <li className={styles.link}>
               <Link className='z-30 no-underline font-["Annie_Use_Your_Telescope"] hover:text-[#a00242] active:text-[#a00242] hover:text-4xl active:text-4xl '
                 href='#contact' scroll={false}>how to find us</Link>
               </li>
-              <li className=''>
+              <li className={styles.link}>
               <Link className='z-30 no-underline font-["Annie_Use_Your_Telescope"] hover:text-[#a00242] active:text-[#a00242] hover:text-4xl active:text-4xl '
                 href='#about' scroll={false}>reservation</Link>
               </li>
-              <li className=''>
+              <li className={styles.link}>
               <Link className='z-30 no-underline font-["Annie_Use_Your_Telescope"] hover:text-[#a00242] active:text-[#a00242] hover:text-4xl active:text-4xl '
                 href='#about' scroll={false}>delivery</Link>
               </li>
             </ul>
           </div>
+            
+          <a
+              className={styles.instaLogo}
+							href='https://www.instagram.com/liaskitchenberlin/?hl=de'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<Image
+							src='/insta.jfif'
+							alt='Instagram logo'
+							width={35}
+							height={35}
+							/>
+						</a>
+            
+
 				</div>  
       </div>
       </>

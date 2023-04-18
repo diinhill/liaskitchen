@@ -48,17 +48,17 @@ export default function Footer() {
 					</div>			
 
 					<div className='w-40 h-40'>
-						<h1 className='text-center pt-3 pb-4 text-black font-["Annie_Use_Your_Telescope"] text-2xl'>OPENING HOURS</h1>
-						<p className='text-center font-["Annie_Use_Your_Telescope"] text-black text-xl'>
+						<h1 className='text-center pt-3 pb-4 text-black font-["Annie_Use_Your_Telescope"] text-4xl'>OPENING HOURS</h1>
+						<p className='text-center font-["Annie_Use_Your_Telescope"] text-black text-3xl'>
 						Monday - Thursday: 
 						<br></br>17:00 - 22:00
 						<br></br>Friday - Sunday: 
 						<br></br>12:00 - 22:00
 						</p> 
 					</div>
-					<div className='w-40 h-40 mt-12'>
-						<h1 className='text-center pt-3 pb-4 text-black font-["Annie_Use_Your_Telescope"] text-2xl'>ADDRESS</h1>
-						<p className='text-center font-["Annie_Use_Your_Telescope"] text-black text-xl'>
+					<div className='w-40 h-40 mt-52'>
+						<h1 className='text-center pt-3 pb-4 text-black font-["Annie_Use_Your_Telescope"] text-4xl'>ADDRESS</h1>
+						<p className='text-center font-["Annie_Use_Your_Telescope"] text-black text-3xl'>
 						Kollwitzstrasse 47 
 						<br></br>10405 Berlin
 						<br></br>+49 163 4648436

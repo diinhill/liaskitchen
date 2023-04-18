@@ -17,31 +17,35 @@ type MenuItem = {
 const MenuItem = ( item: MenuItem ) => {
    
     return (
-        <>
-            <div className='bg-[#7ECBE9] w-[350px] h-[350px] rounded-sm shadow-[#366477] shadow-md'>
-                <div className='flex justify-center'>
-                    <Image src={item.item.image} alt={item.item.name} width={300} height={300} className='-mt-24 mb-4'/>
+        
+            <div className='group relative flex justify-center items-center w-[350px] h-[350px] bg-[#7ECBE9] rounded-xl shadow-[#366477] shadow-md transition duration-300 ease-in-out hover:w-[351] hover:h-[351px]'>
+                
+              <div className=''>
+                <div className='flex justify-center -mt-24 mb-4 group-hover:translate-y-[-30px]'>
+                    <Image src={item.item.image} alt={item.item.name} width={300} height={300} className='group-hover:translate-x-[-10px] group-hover:translate-y-[-20px] group-hover:rotate-[-5deg] group-hover:scale-[1.1]'/>
                 </div>    
 
-                <div className='ml-2'>
-                    <h2 className='text-3xl font-["Annie_Use_Your_Telescope"] text-white'>{item.item.name}</h2>
-                    <h3 className='text-2xl font-["Annie_Use_Your_Telescope"] text-white'>{item.item.price}</h3>
-                </div>
+                {item.item.descriptionDeutsch != '' ?
+                    <div className='ml-2 -mt-3'>
+                        <h2 className='text-4xl font-["Annie_Use_Your_Telescope"] text-[#581b34] group-hover:text-[#7ecbe9b5]'>{item.item.name}</h2>
+                        <h3 className='text-3xl font-["Annie_Use_Your_Telescope"] text-black group-hover:text-[#7ecbe9b5]'>{item.item.price}</h3>
+                    </div>
+                    : <div className='ml-2 -mt-3'>
+                        <h2 className='text-3xl font-["Annie_Use_Your_Telescope"] text-[#581b34] group-hover:text-4xl'>{item.item.name}</h2>
+                        <h3 className='text-2xl font-["Annie_Use_Your_Telescope"] text-black group-hover:text-3xl'>{item.item.price}</h3>
+                    </div>}
+                 
 
                 {item.item.descriptionDeutsch != '' ?
-                    <div className={styles.dropdown}>
-                        <div className={styles.containerButton}>
-                            <button className={styles.button} />
-                        </div>
-                        <div className={styles.dropdownContent}>
-                            <div className='bg-[#7ECBE9] rounded-sm shadow-[#366477] shadow-md'>
-                                <p className='text-2xl m-2 p-2 text-white font-["Annie_Use_Your_Telescope"]'>{item.item.descriptionDeutsch}</p>
-                            </div>
+                    <div className='absolute inset-x-0 bottom-0'>
+                        <div className='opacity-0 transition-opacity ease-in-out duration-300 group-hover:opacity-100 delay-100 bg-[#7ecbe9e7] border-t-6 border-[#7ecbe94c] rounded-t-xl'>
+                            <p className='text-2xl m-2 p-4 text-[#581b34] font-["Neucha"]'>{item.item.descriptionDeutsch}</p>  
                         </div>
                     </div> : null}
-               
-            </div>
-        </>   
+            </div> 
+            </div>   
+            
+   
     )
 }
 export default MenuItem

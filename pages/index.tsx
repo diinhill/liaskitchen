@@ -34,7 +34,7 @@ export default function Home() {
         <div className={styles.noiseTexture}>
           <Navbar />
           <Header />
-          <div className='-mb-[60%] sm:-mb-[20%] md:-mb-[15%] lg:-mb-[10%]' ref={menuRef}/>
+          <div className='mt-48 absolute' ref={menuRef}/>
           <Menu  />
           <Footer />
         </div>

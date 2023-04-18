@@ -26,11 +26,11 @@ export default function Header(): JSX.Element {
  
 	return (
 		<>
-			<div className='w-screen md:w-auto lg:w-auto h-[800px] md:h-[800px] lg:h-[800px] overflow-x-hidden bg-[#fffff6]'> 
+			<div className='w-screen md:w-auto lg:w-auto h-[760px] sm:h-[800px] md:h-[800px] lg:h-[800px] overflow-x-hidden bg-[#fffff6]'> 
 				<div id='fluid' className={styles.header}>
 				
 
-<div className='h-[60%]'>		
+<div className='h-[60%] mt-14'>		
 <svg x="0px" y="0px"
 	 width="100%" height="100%" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xmlSpace="preserve">
 <g>
