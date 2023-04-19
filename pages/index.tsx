@@ -1,24 +1,25 @@
-import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
-import Header from '../components/Header'
-import Navbar from '../components/Navbar'
-import Menu from '../components/Menu'
-import Footer from '../components/Footer'
-import { useEffect, useRef } from 'react'
+import Head from "next/head";
+import styles from "@/styles/Home.module.css";
+import Header from "../components/Header";
+import Navbar from "../components/Navbar";
+import Menu from "../components/Menu";
+import Footer from "../components/Footer";
+import { useEffect, useRef } from "react";
+import { GetStaticProps } from "next";
 
+export default function Home({ locale }: { locale: string }) {
+  console.log("locale", locale);
+  const menuRef = useRef<null | HTMLDivElement>(null);
+  const executeScroll = () =>
+    menuRef?.current &&
+    menuRef.current.scrollIntoView({
+      block: "center",
+      behavior: "smooth",
+    });
 
-export default function Home() {
-
-    const menuRef = useRef<null | HTMLDivElement>(null)
-    const executeScroll = () => menuRef?.current  && menuRef.current.scrollIntoView({
-      block: 'center',
-      behavior: 'smooth',
-    })   
-  
-    useEffect(() => {
-      executeScroll() 
-    }, [])
-  
+  useEffect(() => {
+    executeScroll();
+  }, []);
 
   return (
     <>
@@ -34,15 +35,22 @@ export default function Home() {
         <div className={styles.noiseTexture}>
           <Navbar />
           <Header />
-          <div className='mt-48 absolute' ref={menuRef}/>
-          <Menu  />
+          <div className="mt-48 absolute" ref={menuRef} />
+          <Menu />
           <Footer />
         </div>
 
         <div className={styles.containerBackToTopButton}>
-          <a className={styles.backToTopButton} href='#' />
-        </div>  
+          <a className={styles.backToTopButton} href="#" />
+        </div>
       </main>
     </>
-  )
+  );
 }
+export const getStaticProps: GetStaticProps = async ({ locale, locales }) => {
+  return {
+    props: {
+      locale,
+    },
+  };
+};
