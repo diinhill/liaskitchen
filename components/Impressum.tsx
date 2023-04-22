@@ -1,3 +1,4 @@
+import Link from "next/link";
 import data from "../data.json";
 type ImpressumT = {
   name: string;
@@ -11,8 +12,11 @@ type ImpressumT = {
 const impressum: ImpressumT = data.impressum;
 export default function Impressum() {
   return (
-    <section id="menu" className="bg-[#fdfbc8]">
-      <div className="relative pl-8 pr-8 pt-8 pb-24 bg-[#fdfbc8]">
+    <section id="impressum" className="bg-[#ffffff]">
+      <div className="relative pl-8 pr-8 pt-8 pb-24 bg-[#ffffff]">
+        <Link href='/'>
+          <p className='text-2xl font-["Annie_Use_Your_Telescope"] text-black mb-2'>&larr;</p>
+        </Link>
         {Object.keys(impressum).map((key: keyof ImpressumT) => (
           <div key={key} className="">
             <p className='text-2xl font-["Annie_Use_Your_Telescope"] text-black mb-2'>

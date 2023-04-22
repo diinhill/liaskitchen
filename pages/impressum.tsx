@@ -11,10 +11,7 @@ export default function ImpressumPage() {
   return (
     <main className={styles.main}>
       <div className={styles.noiseTexture}>
-        <Navbar />
-
         <Impressum />
-        <Footer />
       </div>
 
       <div className={styles.containerBackToTopButton}>
