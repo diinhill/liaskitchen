@@ -57,7 +57,7 @@ const MenuItem = (item: MenuItem) => {
 
         <div className="absolute inset-x-0 bottom-0">
           <div className="opacity-0 transition-opacity ease-in-out duration-300 group-hover:opacity-100 delay-100 bg-[#7ecbe9e7] border-t-6 border-[#7ecbe94c] rounded-t-xl">
-            <p className='text-2xl m-2 p-4 text-[#581b34] font-["Neucha"]'>
+            <p className='text-2xl m-2 p-4 text-[#581b34] font-["Architects_Daughter"]'>
               {description}
             </p>
           </div>

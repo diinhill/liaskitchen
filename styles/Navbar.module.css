@@ -1,63 +1,55 @@
-.dropdown:hover .dropdownContent {
-  display: block;
-}
-
 @media (max-width: 640px) {
-  .dropdownContent {
+  .wideScreen {
   display: none;
-  position: absolute;
-  width: 55%;
-  /* box-shadow: 10px 100px 100px 100px #32718c38;
-  padding: 16px 16px;
-  z-index: 11;
-  margin-top: 145px; */
   }
-  .link {
-    position: absolute;
-     top: 0.5rem;
-  }
-  .button {
-    left: 1rem;
-    position: absolute;
-}
-  .instaLogo {
-    right: 1rem;
-    top: 0.5rem;
-    position: absolute;
-  }
-  .dropdown {
+  .mobile {
     display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
     background-color: #fffff6;
     height: 60px;
+  }  
+  /* .link {
+    display: none;
+    position: absolute;
+    top: 0.5rem;
+  } */
+  .button {
+    left: 1rem;
+    position: absolute;
+    display: flex;
+    width: 33%;
+    height: 45%;
+    top: 17px;
+}
+  .instaLogo {
+    right: 1rem;
+    top: 0.7rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
   }
-
 }
 @media (min-width: 640px) {
-  .dropdownContent {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  
-  /* box-shadow: 1px 1px 5px 1px #18262c80; */
-  }
-  .button {
-  margin-left: 1rem;
-  position: absolute;
+  .mobile {
   display: none;
  }
- .instaLogo {
-    right: 2rem;
-    position: absolute;
-  }
-  .dropdown {
+   .wideScreen {
   display: flex;
   align-items: center;
   flex-direction: row;
   position: relative;
   height: 60px;
 }
+  .navList {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  }
+ .instaLogo {
+    right: 2rem;
+    position: absolute;
+  }
 }

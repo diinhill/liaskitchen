@@ -6,6 +6,8 @@ import Menu from "../components/Menu";
 import Footer from "../components/Footer";
 import { useEffect, useRef } from "react";
 import { GetStaticProps } from "next";
+import Reservation from "@/components/Reservation";
+import Delivery from "@/components/Delivery";
 
 export default function Home({ locale }: { locale: string }) {
   console.log("locale", locale);
@@ -37,6 +39,8 @@ export default function Home({ locale }: { locale: string }) {
           <Header />
           <div className="mt-48 absolute" ref={menuRef} />
           <Menu />
+          <Delivery />
+          <Reservation />
           <Footer />
         </div>
 
@@ -47,7 +51,8 @@ export default function Home({ locale }: { locale: string }) {
     </>
   );
 }
-export const getStaticProps: GetStaticProps = async ({ locale, locales }) => {
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  console.log(locale)
   return {
     props: {
       locale,
