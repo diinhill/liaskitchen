@@ -29,7 +29,7 @@ export default function Header(): JSX.Element {
 				<div id='fluid' className={styles.header}>
 				
 
-                <svg x="0px" y="0px" width="100%"
+                {/* <svg x="0px" y="0px" width="100%"
                         height="100%" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xmlSpace="preserve">
                     <g id="fruitBasketBorderCircle">
                         <circle fill="#E7135D" stroke="#000000" stroke-width="0.25" stroke-miterlimit="10" cx="50.22" cy="49.306" r="32.199"/>
@@ -6752,7 +6752,7 @@ export default function Header(): JSX.Element {
                                 84.125,126 84.125,81.896 76.125,94.919 68.264,77.209 59.396,95.228" className={styles.teethBottom}/>
                         </g>
                     </g>
-                </svg>
+                </svg> */}
 
 
 				<div className={styles.containerButton}>

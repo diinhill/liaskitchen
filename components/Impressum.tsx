@@ -1,5 +1,6 @@
 import Link from "next/link";
 import data from "../data.json";
+import Navbar from "./Navbar";
 type ImpressumT = {
   name: string;
   street: string;
@@ -16,8 +17,9 @@ type ImpressumT = {
 const impressum: ImpressumT = data.impressum;
 export default function Impressum() {
   return (
-    <section id="impressum" className="bg-secondary">
-      <div className="relative pl-8 pr-8 pt-8 pb-24 bg-secondary">
+    <section id="impressum" className="bg-secondary w-screen md:w-auto lg:w-auto overflow-x-hidden">
+      <Navbar />
+      <div className=" ml-8 mr-8 pt-8 pb-24">
         <Link href='/'>
           <p className='text-2xl font-["Annie_Use_Your_Telescope"] text-black mb-2'>&larr;</p>
         </Link>
@@ -48,7 +50,7 @@ export default function Impressum() {
           <br></br>https://ec.europa.eu/consumers/odr/.
           <br></br>Unsere E-Mail-Adresse finden Sie oben im Impressum.
         </p>
-        <h2 className='text-3xl font-["Annie_Use_Your_Telescope"] text-black mb-2 mt-4'>Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
+        <h2 className='text-3xl font-["Annie_Use_Your_Telescope"] text-black mb-2 mt-4'>Verbraucherstreitbeilegung/ Universalschlichtungsstelle</h2>
         <p className='text-xl font-["Annie_Use_Your_Telescope"] text-black mb-2'>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
           Verbraucherschlichtungsstelle teilzunehmen.
         </p>

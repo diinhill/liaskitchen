@@ -5,13 +5,13 @@ import LocaleSwitcher from "./locale-switcher";
 
 export default function Navbar() {
   return (
-    <>
+    
       <div id="navbar" className="sticky top-0 bg-[#fffff6] z-10">
         <div className={styles.mobile}>
           <div className={styles.button}>
             <Link href="#menu" scroll={false} type='button' className='group active:w-[50%] hover:w-[50%]' id="menubutton1" aria-haspopup="true" aria-controls="menu1">
-              <svg className='active:w-[120%] hover:w-[120%] z-30' x="0px" y="0px" width="100%" height="100%" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xmlSpace="preserve">
-                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#7ECBE9" stroke="#000000" stroke-width="6" stroke-miterlimit="10" cx="50" cy="50" r="40"/>
+              <svg className='active:w-[120%] hover:w-[120%] z-30' x="0px" y="0px" width="100%" height="100%" viewBox="0 0 100 100" enableBackground="new 0 0 100 100" xmlSpace="preserve">
+                <circle fillRule="evenodd" clipRule="evenodd" fill="#7ECBE9" stroke="#000000" strokeWidth="6" strokeMiterlimit="10" cx="50" cy="50" r="40"/>
               </svg>
               <label id="menu1" aria-labelledby="menubutton1"
                 className='absolute w-[100%] top-5 z-10 opacity-0 group-hover:opacity-100 no-underline font-["Annie_Use_Your_Telescope"] text-black text-3xl bg-[#7ECBE9] pb-1 pl-2 pr-2 rounded border-2 border-black'
@@ -20,8 +20,8 @@ export default function Navbar() {
               </label>
             </Link>
             <Link href="#contact" scroll={false} className='group active:w-[50%] hover:w-[50%]' id="menubutton2" aria-haspopup="true" aria-controls="menu2">
-              <svg className='active:w-[120%] hover:w-[120%]' x="0px" y="0px" width="100%" height="100%" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xmlSpace="preserve">
-                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#7ECBE9" stroke="#000000" stroke-width="6" stroke-miterlimit="10" cx="50" cy="50" r="40"/>
+              <svg className='active:w-[120%] hover:w-[120%]' x="0px" y="0px" width="100%" height="100%" viewBox="0 0 100 100" enableBackground="new 0 0 100 100" xmlSpace="preserve">
+                <circle fillRule="evenodd" clipRule="evenodd" fill="#7ECBE9" stroke="#000000" strokeWidth="6" strokeMiterlimit="10" cx="50" cy="50" r="40"/>
               </svg>
               <label id="menu2" aria-labelledby="menubutton2"
                 className='absolute w-[100%] top-5 opacity-0 group-hover:opacity-100 z-30 no-underline font-["Annie_Use_Your_Telescope"] text-black text-3xl bg-[#7ECBE9] pb-1 pl-2 pr-2 rounded border-2 border-black'
@@ -30,8 +30,8 @@ export default function Navbar() {
               </label>
             </Link>
             <Link href="#reservation" scroll={false} className='group active:w-[50%] hover:w-[50%]' id="menubutton3" aria-haspopup="true" aria-controls="menu3">
-              <svg className='active:w-[120%] hover:w-[120%]' x="0px" y="0px" width="100%" height="100%" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xmlSpace="preserve">
-                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#7ECBE9" stroke="#000000" stroke-width="6" stroke-miterlimit="10" cx="50" cy="50" r="40"/>
+              <svg className='active:w-[120%] hover:w-[120%]' x="0px" y="0px" width="100%" height="100%" viewBox="0 0 100 100" enableBackground="new 0 0 100 100" xmlSpace="preserve">
+                <circle fillRule="evenodd" clipRule="evenodd" fill="#7ECBE9" stroke="#000000" strokeWidth="6" strokeMiterlimit="10" cx="50" cy="50" r="40"/>
               </svg>
               <label id="menu3" aria-labelledby="menubutton3"
                 className='absolute w-[100%] top-5 opacity-0 group-hover:opacity-100 z-30 no-underline font-["Annie_Use_Your_Telescope"] text-black text-3xl bg-[#7ECBE9] pb-1 pl-2 pr-2 rounded border-2 border-black'
@@ -41,8 +41,8 @@ export default function Navbar() {
               </label>
             </Link>
             <Link href="#delivery" scroll={false} className='group active:w-[50%] hover:w-[50%]' id="menubutton4" aria-haspopup="true" aria-controls="menu4">
-              <svg className='active:w-[120%] hover:w-[120%]' x="0px" y="0px" width="100%" height="100%" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xmlSpace="preserve">
-                <circle fill-rule="evenodd" clip-rule="evenodd" fill="#7ECBE9" stroke="#000000" stroke-width="6" stroke-miterlimit="10" cx="50" cy="50" r="40"/>
+              <svg className='active:w-[120%] hover:w-[120%]' x="0px" y="0px" width="100%" height="100%" viewBox="0 0 100 100" enableBackground="new 0 0 100 100" xmlSpace="preserve">
+                <circle fillRule="evenodd" clipRule="evenodd" fill="#7ECBE9" stroke="#000000" strokeWidth="6" strokeMiterlimit="10" cx="50" cy="50" r="40"/>
               </svg>
               <label id="menu4" aria-labelledby="menubutton4"
                 className='absolute w-[100%] top-5 opacity-0 group-hover:opacity-100 z-30 no-underline font-["Annie_Use_Your_Telescope"] text-black text-3xl bg-[#7ECBE9] pb-1 pl-2 pr-2 rounded border-2 border-black'
@@ -132,6 +132,6 @@ export default function Navbar() {
           </a>
         </div>
       </div>
-    </>
-  );
+    
+  )
 }
