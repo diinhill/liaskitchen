@@ -4330,10 +4330,6 @@ export default function Header(): JSX.Element {
 </svg>
 </div>						
 
-				{/* <div className={styles.containerButton}>
-					<a className={styles.button} href='#menu'>
-					</a>
-				</div>   */}
 					
           		</div>
 			</div>

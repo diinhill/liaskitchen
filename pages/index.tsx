@@ -8,6 +8,7 @@ import { useEffect, useRef } from "react";
 import { GetStaticProps } from "next";
 import Reservation from "@/components/Reservation";
 import Delivery from "@/components/Delivery";
+import CookieConsent from "@/components/CookieConsent";
 
 export default function Home({ locale }: { locale: string }) {
   console.log("locale", locale);
@@ -37,7 +38,7 @@ export default function Home({ locale }: { locale: string }) {
         <div className={styles.noiseTexture}>
           <Navbar />
           <Header />
-          <div className="mt-48 absolute" ref={menuRef} />
+          <div className="mt-52 absolute" ref={menuRef} />
           <Menu />
           <Delivery />
           <Reservation />
@@ -47,6 +48,8 @@ export default function Home({ locale }: { locale: string }) {
         <div className={styles.containerBackToTopButton}>
           <a className={styles.backToTopButton} href="#" />
         </div>
+
+        <CookieConsent />
       </main>
     </>
   );

@@ -1,7 +1,5 @@
-import styles from "@/styles/Menu.module.css";
-import { useEffect, useRef } from "react";
-import data from "../data.json";
-import MenuItem from "./MenuItem";
+import data from "../data.json"
+import MenuItem from "./MenuItem"
 
 export default function Menu() {
   return (
@@ -14,5 +12,5 @@ export default function Menu() {
         ))}
       </div>
     </section>
-  );
+  )
 }

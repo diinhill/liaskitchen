@@ -8,12 +8,11 @@ export default function Footer() {
         <>
         <footer id='contact' className={styles.bgWave}>
 			<div className='flex flex-col items-center justify-end'>
-					{/* lg:flex-row  lg:justify-center */}
 				<div className='flex justify-center items-center'>
 						
 				<div className=''>		
 
-					<div className='w-50 h-50'>
+					<div className='w-50 h-50 mt-20'>
 						<h1 className='text-center pt-3 pb-4 text-black font-["Annie_Use_Your_Telescope"] text-4xl'>OPENING HOURS</h1>
 						<p className='text-center font-["Annie_Use_Your_Telescope"] text-black text-3xl'>
 						Monday - Thursday: 
@@ -47,7 +46,7 @@ export default function Footer() {
 							rel='noopener noreferrer'
 						>
 		
-							<svg x="0px" y="0px" width="30%" height="30%" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xmlSpace="preserve">
+							<svg x="0px" y="0px" width="20%" height="20%" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xmlSpace="preserve">
 							<g>
 								<path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M0,97.469C0,66.414,0,35.351,0,4.291c33.336,0,66.668,0,100,0
 									c0,31.056,0,62.108,0,93.178C66.665,97.469,33.331,97.469,0,97.469z M20.833,46.897c-0.485,0.239-1.028,0.47-1.536,0.762
