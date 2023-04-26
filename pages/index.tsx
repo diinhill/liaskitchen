@@ -10,19 +10,22 @@ import Reservation from "@/components/Reservation";
 import Delivery from "@/components/Delivery";
 import CookieConsent from "@/components/CookieConsent";
 
-export default function Home({ locale }: { locale: string }) {
-  console.log("locale", locale);
-  const menuRef = useRef<null | HTMLDivElement>(null);
+
+export default function Home ({ locale }: { locale: string }) {
+  
+  console.log("locale", locale)
+
+  const menuRef = useRef<null | HTMLDivElement>(null)
   const executeScroll = () =>
     menuRef?.current &&
     menuRef.current.scrollIntoView({
       block: "center",
       behavior: "smooth",
-    });
+    })
 
   useEffect(() => {
-    executeScroll();
-  }, []);
+    executeScroll()
+  }, [])
 
   return (
     <>
@@ -52,13 +55,14 @@ export default function Home({ locale }: { locale: string }) {
         <CookieConsent />
       </main>
     </>
-  );
+  )
 }
+
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   console.log(locale)
   return {
     props: {
       locale,
     },
-  };
-};
+  }
+}

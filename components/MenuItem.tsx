@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "@/styles/MenuItem.module.css";
-import Image from "next/image";
-import { useRouter } from "next/router";
+import React from 'react'
+import styles from '@/styles/MenuItem.module.css'
+import Image from 'next/image'
+import { useRouter } from 'next/router'
 
 type MenuItem = {
   item: {
@@ -13,8 +13,8 @@ type MenuItem = {
     descriptionEnglish?: string;
     image: string;
     key?: number;
-  };
-};
+  }
+}
 
 const MenuItem = (item: MenuItem) => {
 
@@ -76,6 +76,6 @@ const MenuItem = (item: MenuItem) => {
         
       </div>
     </div>
-  );
-};
-export default MenuItem;
+  )
+}
+export default MenuItem
