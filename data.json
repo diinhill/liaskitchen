@@ -32,8 +32,8 @@
       "nameDeutsch": "Queen'Noa-Lentils Burger",
       "nameEnglish": "Queen'Noa-Lentils Burger",
       "price": 9.9,
-      "descriptionDeutsch": "Quinoa-Linsen-Bulette, marinierte gegrillte Portobello-Pilze, mit geräucherter BBQ-Ahorn-Soße - Extras: 'NoKäse'/ Jalapenos (1€)",
-      "descriptionEnglish": "Quinoa-lentils patty, marinated grilled portobello mushroom, with a maple smoked BBQ sauce - Extras: vegan cheeze/ jalapeños (1€)",
+      "descriptionDeutsch": "Quinoa-Linsen-Bulette, marinierte gegrillte Portobello-Pilze, mit geräucherter BBQ-Ahorn-Soße",
+      "descriptionEnglish": "Quinoa-lentils patty, marinated grilled portobello mushroom, with a maple smoked BBQ sauce",
       "image": "/menu/queen'noa-lentils-burger.png"
     },
     {
@@ -131,16 +131,94 @@
       "image": "/menu/krautsalat.png"
     }
   ],
+  "i8n": {
+    "reservation": {
+      "en": "reserve a table",
+      "de": "reservierungen"
+    },
+    "order": {
+      "en": "order a delivery",
+      "de": "lieferung"
+    },
+    "openingHours": {
+      "en": "opening hours",
+      "de": "öffnungszeiten"
+    },
+    "openingDays": {
+      "en": " Monday - Thursday",
+      "de": "Montag - Donnerstag"
+    }
+  },
   "impressum": {
     "name": "LIA-Vegan Burgers & Salads GmbH",
     "street": "Kollwitzstraße 47",
     "city": "10405 Berlin",
-    "phone": "0163 4648436",
-    "email": "Info@liaskitchen.de",
+    "phone": "01634648436",
+    "email": "info@liaskitchen.de",
     "handelsregister": "HRB 175037 B",
     "registergericht": "AG Charlottenburg",
     "vat": "DE 306545014",
     "responsible": "Lior Eden",
     "info": "Job or trade-related information (professional association/professional title)"
+  },
+  "seo": {
+    "title": "Lias Kitchen",
+    "description": "Fast Food ≠ Junk Food",
+    "canonical": "https://www.lias.kitchen/",
+    "openGraph": {
+      "type": "website",
+      "locale": "en",
+      "url": "https://lias.kitchen/",
+      "siteName": "Lias kitchen"
+    }
+  },
+  "jsonLd": {
+    "type": "Restaurant",
+    "url": "https://lias.kitchen/",
+    "name": "Lia's Kitchen",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Kollwitzstraße 47",
+      "addressLocality": "Berlin",
+      "addressRegion": "Berlin",
+      "postalCode": "10405",
+      "addressCountry": "DE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 52.534562,
+      "longitude": 13.415688
+    },
+    "telephone": "+491634648436",
+    "servesCuisine": "Vegan",
+    "priceRange": "€",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday"],
+        "opens": "11:30",
+        "closes": "22:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Wednesday", "Thursday", "Friday"],
+        "opens": "11:30",
+        "closes": "23:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "16:00",
+        "closes": "23:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "16:00",
+        "closes": "22:00"
+      }
+    ],
+    "menu": "https://www.example.com/menu",
+    "acceptsReservations": "True"
   }
 }
