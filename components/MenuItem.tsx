@@ -18,14 +18,14 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
   const { locale = "en" } = router;
   const lang = locale as keyof LocalesI;
   const [isOpen, setIsOpen] = useState(false);
-  const { description, name } = item;
+  const { description, name, image, price } = item;
 
   return (
     <div className="group relative flex justify-center items-center w-[350px] h-[350px] bg-[#7ECBE9] rounded-xl shadow-[#366477] shadow-md transition duration-300 ease-in-out hover:w-[351] hover:h-[351px]">
       <div>
         <div className="flex justify-center -mt-44 group-hover:translate-y-[-30px]">
           <Image
-            src={item.image}
+            src={image}
             alt={name[lang]}
             width={300}
             height={300}
@@ -34,13 +34,13 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
         </div>
 
         <div className='absolute inset-x-4 bottom-5 font-["Annie_Use_Your_Telescope"]'>
-          {item.description ? (
+          {description ? (
             <div>
               <h2 className="text-4xl text-[#581b34] group-hover:text-[#7ecbe9b5]">
                 {name[lang]}
               </h2>
               <h3 className="text-3xl text-black group-hover:text-[#7ecbe9b5]">
-                {item.price}
+                {price}
               </h3>
             </div>
           ) : (
@@ -49,7 +49,7 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
                 {name[lang]}
               </h2>
               <h3 className="text-2xl text-black group-hover:text-3xl">
-                {item.price}
+                {price}
               </h3>
             </div>
           )}
