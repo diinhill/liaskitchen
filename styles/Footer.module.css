@@ -1,18 +1,10 @@
-.bgWave {
-    height: inherit;
-    
-    /* overflow: auto; */
-    resize: both;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end; */
-
-  /* aspect-ratio: 2000/2000; */
+.wavyBackground {
+  height: inherit;
+  resize: both;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  background-image: url('/wave_footer.svg');
+  background-image: url('/footer-wave.svg');
 }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import ScrollLink from "./ScrollLink";
 
 type NavbarItem = {
   item: {
@@ -18,6 +19,19 @@ const NavbarItemWide = (item: NavbarItem) => {
 
   const router = useRouter();
 
+  // return (
+  //   <ScrollLink
+  //     className={`cursor-pointer ${
+  //       router.asPath == item.item.path
+  //         ? "text-[#a00242] text-4xl"
+  //         : "hover:text-[#a00242] hover:text-4xl"
+  //     }`}
+  //     href={item.item.path}
+  //     scroll={router.asPath !== item.item.path}
+  //   >
+  //     {title}
+  //   </ScrollLink>
+  // );
   return (
     <Link
       className={`cursor-pointer ${

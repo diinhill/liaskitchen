@@ -7,34 +7,21 @@ export default function Delivery() {
   const { locale = "en" } = routerLang;
   const { i8n } = data;
   return (
-    <section id="delivery" className="bg-[#fdfbc8]">
-      <div className="h-[150px] flex flex-col items-center justify-center">
-        <p className='text-black text-3xl font-["Annie_Use_Your_Telescope"] mb-3 mt-48'>
-          {locale === "de" ? i8n.order.de : i8n.order.en}:
-        </p>
-        <a
-          className="mb-20"
-          href="https://wolt.com/de/deu/berlin/restaurant/lias-kitchen-100-vegan"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            className="hover:w-[65px]"
-            src="/wolt-icon.png"
-            alt="Wolt logo"
-            width={60}
-            height={60}
-          />
-        </a>
-
-        {/* <a
-							href='https://liaskitchen.jetzt-bestellen.menu/'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							<p>pickup order</p>
-						</a> */}
-      </div>
+    <section
+      id="delivery"
+      className="flex flex-col items-center justify-center md:mt-20"
+    >
+      <p className='text-black text-3xl font-["Annie_Use_Your_Telescope"] mb-2 mt-12 md:mt-0'>
+        {locale === "de" ? i8n.order.de : i8n.order.en}:
+      </p>
+      <a
+        className="md:mb-16 p-2 bg-secondary rounded shadow-sm shadow-slate-500 hover:shadow-md"
+        href="https://wolt.com/de/deu/berlin/restaurant/lias-kitchen-100-vegan"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image src="/wolt-icon.png" alt="Wolt logo" width={60} height={60} />
+      </a>
     </section>
   );
 }

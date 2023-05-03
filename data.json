@@ -2,151 +2,204 @@
   "menu": [
     {
       "id": 1,
-      "nameDeutsch": "Chi'ken Burger Classic",
-      "nameEnglish": "Chi'ken Burger Classic",
+      "name": {
+        "de": "Chi'ken Burger Classic",
+        "en": "Chi'ken Burger Classic"
+      },
       "price": 8.9,
-      "descriptionDeutsch": "Hausgemachte Seitan-Streifen, hausgemachter veganer Feta 'Nokäse', marinierte geröstete Paprika, Rucola, Mayo und Chili-Soße",
-      "descriptionEnglish": "Homemade seitan stripes with vegan feta-cheeze, marinated roasted peppers, rochet, mayo and chilli sauce",
+      "description": {
+        "de": "Hausgemachte Seitan-Streifen, hausgemachter veganer Feta 'Nokäse', marinierte geröstete Paprika, Rucola, Mayo und Chili-Soße",
+        "en": "Homemade seitan stripes with vegan feta-cheeze, marinated roasted peppers, rochet, mayo and chilli sauce"
+      },
       "image": "/menu/classic-chicken-burger.png"
     },
     {
       "id": 2,
-      "nameDeutsch": "Chi'ken Guacamole Burger",
-      "nameEnglish": "Chi'ken Guacamole Burger",
+      "name": {
+        "de": "Chi'ken Guacamole Burger",
+        "en": "Chi'ken Guacamole Burger"
+      },
       "price": 8.9,
-      "descriptionDeutsch": "Hausgemachte Seitan-Streifen, Guacamole, eingelegte rote Zwiebeln, Rucola und Mayo",
-      "descriptionEnglish": "Homemade seitan stripes with guacamole, pickled onions, mayo, and rocket",
+      "description": {
+        "de": "Hausgemachte Seitan-Streifen, Guacamole, eingelegte rote Zwiebeln, Rucola und Mayo",
+        "en": "Homemade seitan stripes with guacamole, pickled onions, mayo, and rocket"
+      },
       "image": "/menu/chicken-guacamole-burger.png"
     },
     {
       "id": 3,
-      "nameDeutsch": "Quinoa-Lentils Burger",
-      "nameEnglish": "Quinoa-Lentils Burger",
+      "name": {
+        "de": "Quinoa-Lentils Burger",
+        "en": "Quinoa-Lentils Burger"
+      },
       "price": 8.5,
-      "descriptionDeutsch": "Quinoa-Linsen-Bulette mit geschmackvoller Erdnuss-Creme, Mayo, Salat,Tomate, Gewürzgurke, Zwiebeln und Rucola",
-      "descriptionEnglish": "Quinoa-lentils patty with a delicious creamy peanut sauce",
+      "description": {
+        "de": "Quinoa-Linsen-Bulette mit geschmackvoller Erdnuss-Creme, Mayo, Salat,Tomate, Gewürzgurke, Zwiebeln und Rucola",
+        "en": "Quinoa-lentils patty with a delicious creamy peanut sauce"
+      },
       "image": "/menu/quinoa-lentil-burger.png"
     },
     {
       "id": 4,
-      "nameDeutsch": "Queen'Noa-Lentils Burger",
-      "nameEnglish": "Queen'Noa-Lentils Burger",
+      "name": {
+        "de": "Queen'Noa-Lentils Burger",
+        "en": "Queen'Noa-Lentils Burger"
+      },
       "price": 9.9,
-      "descriptionDeutsch": "Quinoa-Linsen-Bulette, marinierte gegrillte Portobello-Pilze, mit geräucherter BBQ-Ahorn-Soße",
-      "descriptionEnglish": "Quinoa-lentils patty, marinated grilled portobello mushroom, with a maple smoked BBQ sauce",
+      "description": {
+        "de": "Quinoa-Linsen-Bulette, marinierte gegrillte Portobello-Pilze, mit geräucherter BBQ-Ahorn-Soße",
+        "en": "Quinoa-lentils patty, marinated grilled portobello mushroom, with a maple smoked BBQ sauce"
+      },
       "image": "/menu/queen'noa-lentils-burger.png"
     },
     {
       "id": 5,
-      "nameDeutsch": "Chili Bean Burger",
-      "nameEnglish": "Chili Bean Burger",
+      "name": {
+        "de": "Chili Bean Burger",
+        "en": "Chili Bean Burger"
+      },
       "price": 7.9,
-      "descriptionDeutsch": "Schwarze-Bohnen-Bulette mit hausgemachter Chili-Soße, Mayo, Salat,Tomate, Gewürzgurke, Zwiebeln und Rucola",
-      "descriptionEnglish": "Black bean patty with a homemade spicy chilli sauce",
+      "description": {
+        "de": "Schwarze-Bohnen-Bulette mit hausgemachter Chili-Soße, Mayo, Salat,Tomate, Gewürzgurke, Zwiebeln und Rucola",
+        "en": "Black bean patty with a homemade spicy chilli sauce"
+      },
       "image": "/menu/chili-bean-burger.png"
     },
     {
       "id": 6,
-      "nameDeutsch": "Oyster-Shiitake Mushroom Burger",
-      "nameEnglish": "Oyster-Shiitake Mushroom Burger",
+      "name": {
+        "de": "Oyster-Shiitake Mushroom Burger",
+        "en": "Oyster-Shiitake Mushroom Burger"
+      },
       "price": 9.5,
-      "descriptionDeutsch": "Hausgemachte Frikadelle mit Austernpilzen, Shiitake und schwarzen Linsen mit hausgemachter Senfsoße, Mayo, Salat,Tomate, Gewürzgurke, Zwiebeln und Rucola (glutenfrei auf Nachfrage)",
-      "descriptionEnglish": "Gluten free patty made out of lentils, oyster mushrooms & shiitake mushrooms, with homemade mustard sauce - gluten free bun upon request",
+      "description": {
+        "de": "Hausgemachte Frikadelle mit Austernpilzen, Shiitake und schwarzen Linsen mit hausgemachter Senfsoße, Mayo, Salat,Tomate, Gewürzgurke, Zwiebeln und Rucola (glutenfrei auf Nachfrage)",
+        "en": "Gluten free patty made out of lentils, oyster mushrooms & shiitake mushrooms, with homemade mustard sauce - gluten free bun upon request"
+      },
       "image": "/menu/oyster-shiitake-burger.png"
     },
     {
       "id": 7,
-      "nameDeutsch": "Smokey BBQ Mushroom Burger",
-      "nameEnglish": "Smokey BBQ Mushroom Burger",
+      "name": {
+        "de": "Smokey BBQ Mushroom Burger",
+        "en": "Smokey BBQ Mushroom Burger"
+      },
       "price": 8.2,
-      "descriptionDeutsch": "Portobello-Champignon-Bulette mit geräucherter BBQ-Ahorn-Soße, Mayo, Salat, Tomate, Gewürzgurke, Zwiebeln und Rucola",
-      "descriptionEnglish": "Portobello-champignons patty with a maple-smoked BBQ sauce",
+      "description": {
+        "de": "Portobello-Champignon-Bulette mit geräucherter BBQ-Ahorn-Soße, Mayo, Salat, Tomate, Gewürzgurke, Zwiebeln und Rucola",
+        "en": "Portobello-champignons patty with a maple-smoked BBQ sauce"
+      },
       "image": "/menu/smokey-bbq-mushroom-burger.png"
     },
     {
       "id": 8,
-      "nameDeutsch": "Quinoa, Berries und Nuts",
-      "nameEnglish": "Quinoa, Berries und Nuts",
+      "name": {
+        "de": "Quinoa, Berries und Nuts",
+        "en": "Quinoa, Berries and Nuts"
+      },
       "price": 9.5,
-      "descriptionDeutsch": "Bunter Quinoa, gemischter Blattsalat, Gojibeeren, Cranberries, Granatapfel, Pekan- und Walnüsse, Radieschen, Frühlingszwiebeln und getrockneten Tomaten - serviert mit Balsamico-Vinaigrette",
-      "descriptionEnglish": "Colourful quinoa, mixed leaves, goji berries, cranberries, Pomegranate, pecan, walnuts, radish, spring onions, and dried tomatoes - served with balsamic-vinaigrette",
+      "description": {
+        "de": "Bunter Quinoa, gemischter Blattsalat, Gojibeeren, Cranberries, Granatapfel, Pekan- und Walnüsse, Radieschen, Frühlingszwiebeln und getrockneten Tomaten - serviert mit Balsamico-Vinaigrette",
+        "en": "Colourful quinoa, mixed leaves, goji berries, cranberries, Pomegranate, pecan, walnuts, radish, spring onions, and dried tomatoes - served with balsamic-vinaigrette"
+      },
       "image": "/menu/quinoa-berries-salad.png"
     },
     {
       "id": 9,
-      "nameDeutsch": "Chi'ken Stripes Salat",
-      "nameEnglish": "Chi'ken Stripes Salad",
+      "name": {
+        "de": "Chi'ken Stripes Salat",
+        "en": "Chi'ken Stripes Salad"
+      },
       "price": 8.5,
-      "descriptionDeutsch": "Knusprig frittierte, hausgemachte Seitan-Streifen, Salatmix, Cherrytomaten, Gurke, rote Zwiebeln und Radieschen - serviert mit weißer Balsamico-Vinaigrette",
-      "descriptionEnglish": "Crunchy fried homemade seitan stripes, lettuce, mixed leaves, cherry tomatoes, cucumber, red onion, carrots and radish - served with white-balsamic-vinaigrette",
+      "description": {
+        "de": "Knusprig frittierte, hausgemachte Seitan-Streifen, Salatmix, Cherrytomaten, Gurke, rote Zwiebeln und Radieschen - serviert mit weißer Balsamico-Vinaigrette",
+        "en": "Crunchy fried homemade seitan stripes, lettuce, mixed leaves, cherry tomatoes, cucumber, red onion, carrots and radish - served with white-balsamic-vinaigrette"
+      },
       "image": "/menu/chicken-salad.png"
     },
     {
       "id": 10,
-      "nameDeutsch": "Lia's Salat",
-      "nameEnglish": "Lia's Salad",
+      "name": {
+        "de": "Lia's Salat",
+        "en": "Lia's Salad"
+      },
       "price": 9.5,
-      "descriptionDeutsch": "Getrocknete Feigen, Aprikosen und Pflaumen, gemischter Blattsalat, Pekan- und Walnüsse, Kürbiskerne, hausgemachter Feta Käse - serviert mit Orangen-Granatapfel-Vinaigrette",
-      "descriptionEnglish": "Dried figs, apricots and plums, mixed leaves, pecans, walnuts, and homemade feta-cheeze - served with orange-pomegranate-vinaigrette",
+      "description": {
+        "de": "Getrocknete Feigen, Aprikosen und Pflaumen, gemischter Blattsalat, Pekan- und Walnüsse, Kürbiskerne, hausgemachter Feta Käse - serviert mit Orangen-Granatapfel-Vinaigrette",
+        "en": "Dried figs, apricots and plums, mixed leaves, pecans, walnuts, and homemade feta-cheeze - served with orange-pomegranate-vinaigrette"
+      },
       "image": "/menu/lias-salad.png"
     },
     {
       "id": 11,
-      "nameDeutsch": "Pommes",
-      "nameEnglish": "Fries",
+      "name": {
+        "de": "Pommes",
+        "en": "Fries"
+      },
       "price": 4,
-      "descriptionDeutsch": "",
       "image": "/menu/french-fries.png"
     },
     {
       "id": 12,
-      "nameDeutsch": "Süßkartoffel-Pommes",
-      "nameEnglish": "Sweet potato fries",
+      "name": {
+        "de": "Süßkartoffel-Pommes",
+        "en": "Sweet potato fries"
+      },
       "price": 4.9,
-      "descriptionDeutsch": "",
       "image": "/menu/sweet-potato-fries.png"
     },
     {
       "id": 13,
-      "nameDeutsch": "Nuggets mit BBQ-Dip",
-      "nameEnglish": "Nuggets with BBQ dip",
+      "name": {
+        "de": "Nuggets mit BBQ-Dip",
+        "en": "Nuggets with BBQ dip"
+      },
       "price": 5,
-      "descriptionDeutsch": "",
       "image": "/menu/nuggets-mit-bbq-dip.png"
     },
     {
       "id": 14,
-      "nameDeutsch": "Kleiner Salat",
-      "nameEnglish": "Small Salad",
+      "name": {
+        "de": "Kleiner Salat",
+        "en": "Small Salad"
+      },
       "price": 5,
-      "descriptionDeutsch": "",
       "image": "/menu/kleiner-salat.png"
     },
     {
       "id": 15,
-      "nameDeutsch": "Krautsalat",
-      "nameEnglish": "Coleslaw",
+      "name": {
+        "de": "Krautsalat",
+        "en": "Coleslaw"
+      },
       "price": 3,
-      "descriptionDeutsch": "",
       "image": "/menu/krautsalat.png"
     }
   ],
   "i8n": {
     "reservation": {
       "en": "reserve a table",
-      "de": "reservierungen"
+      "de": "Reservierungen"
     },
     "order": {
       "en": "order a delivery",
-      "de": "lieferung"
+      "de": "Lieferung"
     },
     "openingHours": {
       "en": "opening hours",
-      "de": "öffnungszeiten"
+      "de": "Öffnungszeiten"
     },
     "openingDays": {
-      "en": " Monday - Thursday",
-      "de": "Montag - Donnerstag"
+      "en": "Monday - Wednesday",
+      "de": "Montag - Mittwoch"
+    },
+    "openingDays2": {
+      "en": "Thursday - Sunday/Holidays",
+      "de": "Donnerstag - Sonntag/Feiertage"
+    },
+    "address": {
+      "en": "address",
+      "de": "Adresse"
     }
   },
   "impressum": {
@@ -164,17 +217,17 @@
   "seo": {
     "title": "Lias Kitchen",
     "description": "Fast Food ≠ Junk Food",
-    "canonical": "https://www.lias.kitchen/",
+    "canonical": "https://www.liaskitchen.de/",
     "openGraph": {
       "type": "website",
       "locale": "en",
-      "url": "https://lias.kitchen/",
+      "url": "https://liaskitchen.de/",
       "siteName": "Lias kitchen"
     }
   },
   "jsonLd": {
     "type": "Restaurant",
-    "url": "https://lias.kitchen/",
+    "url": "https://liaskitchen.de/",
     "name": "Lia's Kitchen",
     "address": {
       "@type": "PostalAddress",
@@ -195,26 +248,14 @@
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday"],
-        "opens": "11:30",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday"],
+        "opens": "17:00",
         "closes": "22:00"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Wednesday", "Thursday", "Friday"],
-        "opens": "11:30",
-        "closes": "23:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "16:00",
-        "closes": "23:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Sunday",
-        "opens": "16:00",
+        "dayOfWeek": ["Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "12:00",
         "closes": "22:00"
       }
     ],

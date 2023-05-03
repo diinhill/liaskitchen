@@ -4,6 +4,7 @@
   scroll-behavior: smooth;
 }
 
+/*//// grainy background texture ////*/
 .main::after {
   content: "";
   height: 100%;
@@ -34,8 +35,6 @@
   margin-right: 0px; 
   width:100%;
   aspect-ratio:1;
-  /* background: rgba(255 181 199);
-  border-radius:10px; */
 }
 .backToTopButton:before {
   content:"";

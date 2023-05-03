@@ -1,33 +1,30 @@
-import Cookies from 'js-cookie'
-import Link from 'next/link'
-import { MouseEvent, useEffect, useState } from 'react'
-// import { Container } from '../layouts/PublicLayout'
+import Cookies from "js-cookie";
+import { MouseEvent, useEffect, useState } from "react";
 
-
-const USER_CONSENT_COOKIE_KEY = 'cookie_consent_is_true'
-const USER_CONSENT_COOKIE_EXPIRE_DATE = 365
+const USER_CONSENT_COOKIE_KEY = "cookie_consent_is_true";
+const USER_CONSENT_COOKIE_EXPIRE_DATE = 365;
 
 const CookieConsent = () => {
-  const [cookieConsentIsTrue, setCookieConsentIsTrue] = useState(true)
+  const [cookieConsentIsTrue, setCookieConsentIsTrue] = useState(true);
 
   useEffect(() => {
-    const consentIsTrue = Cookies.get(USER_CONSENT_COOKIE_KEY) === 'true'
-    setCookieConsentIsTrue(consentIsTrue)
-  }, [])
+    const consentIsTrue = Cookies.get(USER_CONSENT_COOKIE_KEY) === "true";
+    setCookieConsentIsTrue(consentIsTrue);
+  }, []);
 
   const onClick = (e: MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault()
+    e.preventDefault();
 
     if (!cookieConsentIsTrue) {
-      Cookies.set(USER_CONSENT_COOKIE_KEY, 'true', {
+      Cookies.set(USER_CONSENT_COOKIE_KEY, "true", {
         expires: USER_CONSENT_COOKIE_EXPIRE_DATE,
-      })
-      setCookieConsentIsTrue(true)
+      });
+      setCookieConsentIsTrue(true);
     }
-  }
+  };
 
   if (cookieConsentIsTrue) {
-    return null
+    return null;
   }
 
   return (
@@ -38,13 +35,12 @@ const CookieConsent = () => {
             <p className="text-sm font-medium">
               This site uses services that use cookies to deliver better
               experience and analyze traffic. You can learn more about the
-              services we use in our{' '}
+              services we use in our{" "}
               {/* <Link href="/privacy-policy">
                 <p className="text-sm underline hover:text-lightAccent"> */}
-                  privacy policy.
-                {/* </p>
+              privacy policy.
+              {/* </p>
               </Link> */}
-              
             </p>
           </div>
           <div className="flex items-center">
@@ -58,7 +54,7 @@ const CookieConsent = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default CookieConsent
+export default CookieConsent;
