@@ -3,6 +3,7 @@ import styles from "@/styles/Navbar.module.css";
 import LocaleSwitcher from "./locale-switcher";
 import NavbarItemMobile from "./NavbarItemMobile";
 import NavbarItemWide from "./NavbarItemWide";
+import Link from "next/link";
 
 type NavbarItem = {
   id: number;
@@ -55,7 +56,7 @@ export default function Navbar() {
           <div className="text-black text-3xl pr-2">
             <LocaleSwitcher />
           </div>
-          <a
+          <Link
             href="https://www.instagram.com/liaskitchenberlin/?hl=de"
             target="_blank"
             rel="noopener noreferrer"
@@ -66,7 +67,7 @@ export default function Navbar() {
               width={35}
               height={35}
             />
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -81,7 +82,7 @@ export default function Navbar() {
             <LocaleSwitcher />
           </ul>
         </div>
-        <a
+        <Link
           className={styles.instaLogo}
           href="https://www.instagram.com/liaskitchenberlin/?hl=de"
           target="_blank"
@@ -93,7 +94,7 @@ export default function Navbar() {
             width={35}
             height={35}
           />
-        </a>
+        </Link>
       </div>
     </div>
   );
