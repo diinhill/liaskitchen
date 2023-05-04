@@ -1,30 +1,28 @@
+import { LocalesI } from "@/types/locale";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
 type NavbarItem = {
-  item: {
-    id: number;
-    titleDeutsch: string;
-    titleEnglish: string;
-    path: string;
-  };
+  id: number;
+  title: { de: string; en: string };
+  path: string;
 };
 
-const NavbarItemMobile = (item: NavbarItem) => {
-  const routerLang = useRouter();
-  const { locale: activeLocale } = routerLang;
-  const title =
-    activeLocale === "de" ? item.item.titleDeutsch : item.item.titleEnglish;
+const NavbarItemMobile = ({ item }: { item: NavbarItem }) => {
+  const router = useRouter();
+  const { locale = "en" } = router;
+  const lang = locale as keyof LocalesI;
+  const { title, path, id } = item;
 
   return (
     <Link
-      href={item.item.path}
+      href={path}
       scroll={false}
       type="button"
       className="group active:w-[50%] hover:w-[50%]"
-      id={`menubutton${item.item.id}`}
+      id={`menubutton${id}`}
       aria-haspopup="true"
-      aria-controls={`menu${item.item.id}`}
+      aria-controls={`menu${id}`}
     >
       <svg
         className="active:w-[120%] hover:w-[120%]"
@@ -49,11 +47,11 @@ const NavbarItemMobile = (item: NavbarItem) => {
         />
       </svg>
       <label
-        id={`menu${item.item.id}`}
-        aria-labelledby={`menubutton${item.item.id}`}
+        id={`menu${id}`}
+        aria-labelledby={`menubutton${id}`}
         className='absolute w-[100%] top-5 z-10 opacity-0 group-hover:opacity-100 no-underline font-["Annie_Use_Your_Telescope"] text-black text-3xl bg-[#7ECBE9] pb-1 pl-2 pr-2 rounded border-2 border-black'
       >
-        {title}
+        {title[lang]}
       </label>
     </Link>
   );

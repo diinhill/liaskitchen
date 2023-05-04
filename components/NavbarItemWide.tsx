@@ -1,23 +1,19 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import ScrollLink from "./ScrollLink";
+import { LocalesI } from "@/types/locale";
 
 type NavbarItem = {
-  item: {
-    id: number;
-    titleDeutsch: string;
-    titleEnglish: string;
-    path: string;
-  };
+  id: number;
+  title: { de: string; en: string };
+  path: string;
 };
 
-const NavbarItemWide = (item: NavbarItem) => {
-  const routerLang = useRouter();
-  const { locale: activeLocale } = routerLang;
-  const title =
-    activeLocale === "de" ? item.item.titleDeutsch : item.item.titleEnglish;
-
+const NavbarItemWide = ({ item }: { item: NavbarItem }) => {
   const router = useRouter();
+  const { locale = "en" } = router;
+  const lang = locale as keyof LocalesI;
+  const { title, path } = item;
 
   // return (
   //   <ScrollLink
@@ -35,14 +31,14 @@ const NavbarItemWide = (item: NavbarItem) => {
   return (
     <Link
       className={`cursor-pointer ${
-        router.asPath == item.item.path
+        router.asPath == path
           ? "text-[#a00242] text-4xl"
           : "hover:text-[#a00242] hover:text-4xl"
       }`}
-      href={item.item.path}
+      href={path}
       scroll={false}
     >
-      {title}
+      {title[lang]}
     </Link>
   );
 };
