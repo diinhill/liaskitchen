@@ -8,7 +8,7 @@ export default function DeliverReserve() {
       className="bg-secondary md:flex md:flex-row md:justify-center md:items-center md:gap-24"
     >
       <Delivery />
-      <Reservation />
+      {/* <Reservation /> */}
     </section>
   );
 }
