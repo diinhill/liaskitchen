@@ -17,7 +17,7 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
   const router = useRouter();
   const { locale = "en" } = router;
   const lang = locale as keyof LocalesI;
-  const [isOpen, setIsOpen] = useState(false);
+
   const { description, name, image, price } = item;
 
   return (
