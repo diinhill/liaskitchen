@@ -27,14 +27,14 @@ export default function Contact() {
       <div className="w-50 h-50 mt-5">
         <h1 className="pt-3 pb-4 text-4xl">{address[lang].toUpperCase()}</h1>
         <Link
-          href="https://www.google.com/maps/dir//liaskitchen+google+maps/@52.5218038,13.4156323,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47a84e024246ac83:0x3de6622d0dadc7b1!2m2!1d13.4157431!2d52.5345476"
+          href="https://maps.app.goo.gl/PzHJwhXkqK4dbNza7"
           target="_blank"
           rel="noopener noreferrer"
         >
           <p>
-            Kollwitzstrasse 47
-            <br></br>10405 Berlin &#8599;
-            <br></br>+49 163 4648436
+          Urbanstraße 32
+            <br></br>10967 Berlin &#8599;
+            {/* <br></br>+49 163 4648436 */}
           </p>
         </Link>
       </div>

@@ -6,7 +6,7 @@
         "de": "Chi'ken Burger Classic",
         "en": "Chi'ken Burger Classic"
       },
-      "price": 8.9,
+      "price": 9.5,
       "description": {
         "de": "Hausgemachte Seitan-Streifen, hausgemachter veganer Feta 'Nokäse', marinierte geröstete Paprika, Rucola, Mayo und Chili-Soße",
         "en": "Homemade seitan stripes with vegan feta-cheeze, marinated roasted peppers, rochet, mayo and chilli sauce"
@@ -19,7 +19,7 @@
         "de": "Chi'ken Guacamole Burger",
         "en": "Chi'ken Guacamole Burger"
       },
-      "price": 8.9,
+      "price": 9.5,
       "description": {
         "de": "Hausgemachte Seitan-Streifen, Guacamole, eingelegte rote Zwiebeln, Rucola und Mayo",
         "en": "Homemade seitan stripes with guacamole, pickled onions, mayo, and rocket"
@@ -32,7 +32,7 @@
         "de": "Quinoa-Lentils Burger",
         "en": "Quinoa-Lentils Burger"
       },
-      "price": 8.5,
+      "price": 9.5,
       "description": {
         "de": "Quinoa-Linsen-Bulette mit geschmackvoller Erdnuss-Creme, Mayo, Salat,Tomate, Gewürzgurke, Zwiebeln und Rucola",
         "en": "Quinoa-lentils patty with a delicious creamy peanut sauce"
@@ -45,7 +45,7 @@
         "de": "Queen'Noa-Lentils Burger",
         "en": "Queen'Noa-Lentils Burger"
       },
-      "price": 9.9,
+      "price": 10.5,
       "description": {
         "de": "Quinoa-Linsen-Bulette, marinierte gegrillte Portobello-Pilze, mit geräucherter BBQ-Ahorn-Soße",
         "en": "Quinoa-lentils patty, marinated grilled portobello mushroom, with a maple smoked BBQ sauce"
@@ -58,7 +58,7 @@
         "de": "Chili Bean Burger",
         "en": "Chili Bean Burger"
       },
-      "price": 7.9,
+      "price": 8,
       "description": {
         "de": "Schwarze-Bohnen-Bulette mit hausgemachter Chili-Soße, Mayo, Salat,Tomate, Gewürzgurke, Zwiebeln und Rucola",
         "en": "Black bean patty with a homemade spicy chilli sauce"
@@ -84,7 +84,7 @@
         "de": "Smokey BBQ Mushroom Burger",
         "en": "Smokey BBQ Mushroom Burger"
       },
-      "price": 8.2,
+      "price": 8.5,
       "description": {
         "de": "Portobello-Champignon-Bulette mit geräucherter BBQ-Ahorn-Soße, Mayo, Salat, Tomate, Gewürzgurke, Zwiebeln und Rucola",
         "en": "Portobello-champignons patty with a maple-smoked BBQ sauce"
@@ -97,7 +97,7 @@
         "de": "Quinoa, Berries und Nuts",
         "en": "Quinoa, Berries and Nuts"
       },
-      "price": 9.5,
+      "price": 10.5,
       "description": {
         "de": "Bunter Quinoa, gemischter Blattsalat, Gojibeeren, Cranberries, Granatapfel, Pekan- und Walnüsse, Radieschen, Frühlingszwiebeln und getrockneten Tomaten - serviert mit Balsamico-Vinaigrette",
         "en": "Colourful quinoa, mixed leaves, goji berries, cranberries, Pomegranate, pecan, walnuts, radish, spring onions, and dried tomatoes - served with balsamic-vinaigrette"
@@ -110,7 +110,7 @@
         "de": "Chi'ken Stripes Salat",
         "en": "Chi'ken Stripes Salad"
       },
-      "price": 8.5,
+      "price": 9.5,
       "description": {
         "de": "Knusprig frittierte, hausgemachte Seitan-Streifen, Salatmix, Cherrytomaten, Gurke, rote Zwiebeln und Radieschen - serviert mit weißer Balsamico-Vinaigrette",
         "en": "Crunchy fried homemade seitan stripes, lettuce, mixed leaves, cherry tomatoes, cucumber, red onion, carrots and radish - served with white-balsamic-vinaigrette"
@@ -123,7 +123,7 @@
         "de": "Lia's Salat",
         "en": "Lia's Salad"
       },
-      "price": 9.5,
+      "price": 10.5,
       "description": {
         "de": "Getrocknete Feigen, Aprikosen und Pflaumen, gemischter Blattsalat, Pekan- und Walnüsse, Kürbiskerne, hausgemachter Feta Käse - serviert mit Orangen-Granatapfel-Vinaigrette",
         "en": "Dried figs, apricots and plums, mixed leaves, pecans, walnuts, and homemade feta-cheeze - served with orange-pomegranate-vinaigrette"
@@ -136,7 +136,7 @@
         "de": "Pommes",
         "en": "Fries"
       },
-      "price": 4,
+      "price": 4.5,
       "image": "/menu/french-fries.png"
     },
     {
@@ -145,7 +145,7 @@
         "de": "Süßkartoffel-Pommes",
         "en": "Sweet potato fries"
       },
-      "price": 4.9,
+      "price": 5.5,
       "image": "/menu/sweet-potato-fries.png"
     },
     {
@@ -154,17 +154,17 @@
         "de": "Nuggets mit BBQ-Dip",
         "en": "Nuggets with BBQ dip"
       },
-      "price": 5,
+      "price": 5.5,
       "image": "/menu/nuggets-mit-bbq-dip.png"
     },
     {
       "id": 14,
       "name": {
-        "de": "Kleiner Salat",
-        "en": "Small Salad"
+        "de": "Panierter Blumenkohl",
+        "en": "Breaded Cauliflower"
       },
-      "price": 5,
-      "image": "/menu/kleiner-salat.png"
+      "price": 5.5,
+      "image": ""
     },
     {
       "id": 15,
@@ -172,7 +172,7 @@
         "de": "Krautsalat",
         "en": "Coleslaw"
       },
-      "price": 3,
+      "price": 3.5,
       "image": "/menu/krautsalat.png"
     }
   ],
@@ -204,8 +204,8 @@
   },
   "impressum": {
     "name": "LIA-Vegan Burgers & Salads GmbH",
-    "street": "Kollwitzstraße 47",
-    "city": "10405 Berlin",
+    "street": "Urbanstraße 32",
+    "city": "10967 Berlin",
     "phone": "01634648436",
     "email": "info@liaskitchen.de",
     "handelsregister": "HRB 175037 B",
@@ -231,18 +231,18 @@
     "name": "Lia's Kitchen",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Kollwitzstraße 47",
+      "streetAddress": "Urbanstraße 32",
       "addressLocality": "Berlin",
       "addressRegion": "Berlin",
-      "postalCode": "10405",
+      "postalCode": "10967",
       "addressCountry": "DE"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 52.534562,
-      "longitude": 13.415688
+      "latitude": 52.49152889313925, 
+      "longitude": 13.413768238948785
     },
-    "telephone": "+491634648436",
+    "telephone": "",
     "servesCuisine": "Vegan",
     "priceRange": "€",
     "openingHoursSpecification": [
