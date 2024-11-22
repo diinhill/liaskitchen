@@ -164,7 +164,7 @@
         "en": "Breaded Cauliflower"
       },
       "price": 5.5,
-      "image": ""
+      "image": "fruitbasket-logo-header.svg"
     },
     {
       "id": 15,
@@ -190,8 +190,8 @@
       "de": "Öffnungszeiten"
     },
     "openingDays": {
-      "en": "Monday - Wednesday",
-      "de": "Montag - Mittwoch"
+      "en": "Open Every Day",
+      "de": "täglich geöffnet"
     },
     "openingDays2": {
       "en": "Thursday - Sunday / Holidays",
@@ -248,13 +248,7 @@
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday"],
-        "opens": "17:00",
-        "closes": "22:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Thursday", "Friday", "Saturday", "Sunday"],
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday","Thursday", "Friday", "Saturday", "Sunday"],
         "opens": "12:00",
         "closes": "22:00"
       }

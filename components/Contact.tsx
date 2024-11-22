@@ -19,9 +19,9 @@ export default function Contact() {
           {openingHours[lang].toUpperCase()}
         </h1>
         <p>
-          {openingDays[lang]}:<br></br>17:00 - 22:00
-          <br></br> {openingDays2[lang]}
-          <br></br>12:00 - 22:00
+          {openingDays[lang]}:<br></br>12:00 - 22:00
+          {/* <br></br> {openingDays2[lang]}
+          <br></br>12:00 - 22:00 */}
         </p>
       </div>
       <div className="w-50 h-50 mt-5">
