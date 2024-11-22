@@ -89,7 +89,7 @@ export default function Navbar() {
           rel="noopener noreferrer"
         >
           <Image
-            src="/insta.jfif"
+            src="/ig.svg"
             alt="Instagram logo"
             width={35}
             height={35}
