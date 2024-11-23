@@ -27,7 +27,7 @@ export default function Contact() {
       <div className="w-50 h-50 mt-5">
         <h1 className="pt-3 pb-4 text-4xl">{address[lang].toUpperCase()}</h1>
         <Link
-          href="https://maps.app.goo.gl/PzHJwhXkqK4dbNza7"
+          href="https://maps.app.goo.gl/UTgCZqVNeM15bKjXA"
           target="_blank"
           rel="noopener noreferrer"
         >
