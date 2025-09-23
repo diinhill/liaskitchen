@@ -1,8 +1,10 @@
+'use client';
+
 import React, { useState } from "react";
 import Image from "next/image";
-import { useRouter } from "next/router";
 import MenuItemDescription from "./MenuItemDescription";
 import { LocalesI } from "@/types/locale";
+import { useLocale } from "./LocaleProvider";
 
 type MenuItem = {
   id: number;
@@ -14,8 +16,7 @@ type MenuItem = {
 };
 
 const MenuItem = ({ item }: { item: MenuItem }) => {
-  const router = useRouter();
-  const { locale = "en" } = router;
+  const { locale } = useLocale();
   const lang = locale as keyof LocalesI;
 
   const { description, name, image, price } = item;

@@ -1,11 +1,12 @@
+'use client';
+
 import Image from "next/image";
-import { useRouter } from "next/router";
 import data from "../data.json";
 import Link from "next/link";
+import { useLocale } from "./LocaleProvider";
 
 export default function Delivery() {
-  const routerLang = useRouter();
-  const { locale = "en" } = routerLang;
+  const { locale } = useLocale();
   const { i8n } = data;
   return (
     <section

@@ -1,11 +1,12 @@
+'use client';
+
 import Link from "next/link";
 import data from "../data.json";
-import { useRouter } from "next/router";
 import { LocalesI } from "@/types/locale";
+import { useLocale } from "./LocaleProvider";
 
 export default function Contact() {
-  const router = useRouter();
-  const { locale = "en" } = router;
+  const { locale } = useLocale();
   const lang = locale as keyof LocalesI;
   const { i8n } = data;
 

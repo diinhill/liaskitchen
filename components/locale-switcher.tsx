@@ -1,12 +1,17 @@
-import Link from "next/link";
-import { useRouter } from "next/router";
+'use client';
 
-export default function IndexPage() {
-  const router = useRouter();
-  const { locale: activeLocale } = router;
+import { useLocale } from "./LocaleProvider";
+
+export default function LocaleSwitcher() {
+  const { locale, setLocale } = useLocale();
+  
+  const toggleLocale = () => {
+    setLocale(locale === "de" ? "en" : "de");
+  };
+
   return (
-    <Link href="/" locale={activeLocale === "de" ? "en" : "de"}>
-      <li>{activeLocale === "de" ? "EN" : "DE"}</li>
-    </Link>
+    <button onClick={toggleLocale} className="cursor-pointer">
+      <li>{locale === "de" ? "EN" : "DE"}</li>
+    </button>
   );
 }

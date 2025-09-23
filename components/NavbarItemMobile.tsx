@@ -1,6 +1,8 @@
+'use client';
+
 import { LocalesI } from "@/types/locale";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useLocale } from "./LocaleProvider";
 
 type NavbarItem = {
   id: number;
@@ -9,8 +11,7 @@ type NavbarItem = {
 };
 
 const NavbarItemMobile = ({ item }: { item: NavbarItem }) => {
-  const router = useRouter();
-  const { locale = "en" } = router;
+  const { locale } = useLocale();
   const lang = locale as keyof LocalesI;
   const { title, path, id } = item;
 

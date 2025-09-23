@@ -1,13 +1,8 @@
-import "@/styles/globals.css";
-import type { AppProps } from "next/app";
-import { DefaultSeo } from "next-seo";
-import { Analytics } from "@vercel/analytics/react";
+'use client';
 
-import data from "../data.json";
 import Script from "next/script";
 
-export default function App({ Component, pageProps }: AppProps) {
-  const { seo } = data;
+export default function GoogleAnalytics() {
   return (
     <>
       <Script
@@ -23,9 +18,6 @@ export default function App({ Component, pageProps }: AppProps) {
           gtag('config', 'G-Z884MGZXBJ');
         `}
       </Script>
-      <DefaultSeo {...seo} />
-      <Component {...pageProps} />
-      <Analytics />
     </>
   );
 }
