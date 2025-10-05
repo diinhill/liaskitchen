@@ -18,31 +18,16 @@ const NavbarItemWide = ({ item }: { item: NavbarItem }) => {
   const lang = locale as keyof LocalesI;
   const { title, path } = item;
 
-  // return (
-  //   <ScrollLink
-  //     className={`cursor-pointer ${
-  //       router.asPath == item.item.path
-  //         ? "text-[#a00242] text-4xl"
-  //         : "hover:text-[#a00242] hover:text-4xl"
-  //     }`}
-  //     href={item.item.path}
-  //     scroll={router.asPath !== item.item.path}
-  //   >
-  //     {title}
-  //   </ScrollLink>
-  // );
   return (
-    <Link
-      className={`cursor-pointer ${
-        pathname == path
+    <ScrollLink
+      className={`cursor-pointer ${pathname == path
           ? "text-[#a00242] text-4xl"
           : "hover:text-[#a00242] hover:text-4xl"
-      }`}
+        }`}
       href={path}
-      scroll={false}
     >
       {title[lang]}
-    </Link>
+    </ScrollLink>
   );
 };
 export default NavbarItemWide;

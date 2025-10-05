@@ -9,6 +9,7 @@ import { useEffect, useRef } from "react";
 import CookieConsent from "@/components/CookieConsent";
 import JsonLd from "@/components/JsonLd";
 import DeliverReserve from "@/components/DeliverReserve";
+import ReservationWidget from "@/components/ReservationWidget";
 
 export default function Home() {
   const menuRef = useRef<null | HTMLDivElement>(null);

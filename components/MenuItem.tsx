@@ -27,9 +27,12 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
         <div className="flex justify-center -mt-44 group-hover:translate-y-[-30px]">
           <Image
             src={image}
-            alt={name[lang]}
+            alt={`${name[lang]} - Vegan ${description ? 'burger' : 'side'} at Lia's Kitchen Berlin`}
             width={300}
             height={300}
+            loading="lazy"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            quality={85}
             className="group-hover:translate-x-[-10px] group-hover:translate-y-[-20px] group-hover:rotate-[-5deg] group-hover:scale-[1.1]"
           />
         </div>
