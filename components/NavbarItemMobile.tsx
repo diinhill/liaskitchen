@@ -1,6 +1,8 @@
+'use client';
+
 import { LocalesI } from "@/types/locale";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import ScrollLink from "./ScrollLink";
+import { useLocale } from "./LocaleProvider";
 
 type NavbarItem = {
   id: number;
@@ -9,23 +11,21 @@ type NavbarItem = {
 };
 
 const NavbarItemMobile = ({ item }: { item: NavbarItem }) => {
-  const router = useRouter();
-  const { locale = "en" } = router;
+  const { locale } = useLocale();
   const lang = locale as keyof LocalesI;
   const { title, path, id } = item;
 
   return (
-    <Link
+    <ScrollLink
       href={path}
-      scroll={false}
       type="button"
-      className="group active:w-[50%] hover:w-[50%]"
+      className="group active:w-[50%] hover:w-[50%] max-w-[60px]"
       id={`menubutton${id}`}
       aria-haspopup="true"
       aria-controls={`menu${id}`}
     >
       <svg
-        className="active:w-[120%] hover:w-[120%]"
+        className="active:w-[120%] hover:w-[120%] max-w-[72px]"
         x="0px"
         y="0px"
         width="100%"
@@ -53,7 +53,7 @@ const NavbarItemMobile = ({ item }: { item: NavbarItem }) => {
       >
         {title[lang]}
       </label>
-    </Link>
+    </ScrollLink>
   );
 };
 export default NavbarItemMobile;

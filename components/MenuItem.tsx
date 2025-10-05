@@ -1,8 +1,10 @@
+'use client';
+
 import React, { useState } from "react";
 import Image from "next/image";
-import { useRouter } from "next/router";
 import MenuItemDescription from "./MenuItemDescription";
 import { LocalesI } from "@/types/locale";
+import { useLocale } from "./LocaleProvider";
 
 type MenuItem = {
   id: number;
@@ -14,8 +16,7 @@ type MenuItem = {
 };
 
 const MenuItem = ({ item }: { item: MenuItem }) => {
-  const router = useRouter();
-  const { locale = "en" } = router;
+  const { locale } = useLocale();
   const lang = locale as keyof LocalesI;
 
   const { description, name, image, price } = item;
@@ -26,9 +27,12 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
         <div className="flex justify-center -mt-44 group-hover:translate-y-[-30px]">
           <Image
             src={image}
-            alt={name[lang]}
+            alt={`${name[lang]} - Vegan ${description ? 'burger' : 'side'} at Lia's Kitchen Berlin`}
             width={300}
             height={300}
+            loading="lazy"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            quality={85}
             className="group-hover:translate-x-[-10px] group-hover:translate-y-[-20px] group-hover:rotate-[-5deg] group-hover:scale-[1.1]"
           />
         </div>

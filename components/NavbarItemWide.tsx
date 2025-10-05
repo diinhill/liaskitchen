@@ -1,7 +1,10 @@
+'use client';
+
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import ScrollLink from "./ScrollLink";
 import { LocalesI } from "@/types/locale";
+import { useLocale } from "./LocaleProvider";
 
 type NavbarItem = {
   id: number;
@@ -10,36 +13,21 @@ type NavbarItem = {
 };
 
 const NavbarItemWide = ({ item }: { item: NavbarItem }) => {
-  const router = useRouter();
-  const { locale = "en" } = router;
+  const { locale } = useLocale();
+  const pathname = usePathname();
   const lang = locale as keyof LocalesI;
   const { title, path } = item;
 
-  // return (
-  //   <ScrollLink
-  //     className={`cursor-pointer ${
-  //       router.asPath == item.item.path
-  //         ? "text-[#a00242] text-4xl"
-  //         : "hover:text-[#a00242] hover:text-4xl"
-  //     }`}
-  //     href={item.item.path}
-  //     scroll={router.asPath !== item.item.path}
-  //   >
-  //     {title}
-  //   </ScrollLink>
-  // );
   return (
-    <Link
-      className={`cursor-pointer ${
-        router.asPath == path
+    <ScrollLink
+      className={`cursor-pointer ${pathname == path
           ? "text-[#a00242] text-4xl"
           : "hover:text-[#a00242] hover:text-4xl"
-      }`}
+        }`}
       href={path}
-      scroll={false}
     >
       {title[lang]}
-    </Link>
+    </ScrollLink>
   );
 };
 export default NavbarItemWide;

@@ -32,6 +32,14 @@ export default function Navbar() {
     {
       id: 3,
       title: {
+        de: "Reservierung",
+        en: "reservation",
+      },
+      path: "/#reservation",
+    },
+    {
+      id: 4,
+      title: {
         de: "Kontakt",
         en: "contact",
       },
@@ -45,7 +53,7 @@ export default function Navbar() {
       className="sticky top-0 bg-[#fffff6] z-10 font-['Annie_Use_Your_Telescope'] list-none"
     >
       <div className={styles.mobile}>
-        <div className="absolute flex top-[10px] left-[1rem] w-[33%]">
+        <div className="absolute flex top-[10px] left-[1rem] w-[33%] max-w-[200px]">
           {navbar.map((navbarItem) => (
             <div key={navbarItem.id}>
               <NavbarItemMobile item={navbarItem} />

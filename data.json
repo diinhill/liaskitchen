@@ -195,6 +195,10 @@
       "en": "reserve a table",
       "de": "Reservierungen"
     },
+    "bookTable": {
+      "en": "book a table",
+      "de": "Buchungstabelle"
+    },
     "order": {
       "en": "order a delivery",
       "de": "Lieferung"
@@ -229,20 +233,30 @@
     "info": "Job or trade-related information (professional association/professional title)"
   },
   "seo": {
-    "title": "Lias Kitchen",
-    "description": "Fast Food ≠ Junk Food",
+    "title": "Lia's Kitchen - 100% Vegan Burgers & Salads in Berlin Kreuzberg",
+    "description": "Best vegan burgers and fresh salads in Berlin Kreuzberg. Homemade plant-based seitan burgers, quinoa bowls & healthy salads. Visit us at Urbanstraße 32. Open daily 12:00-22:00. Order delivery via Wolt.",
+    "keywords": "vegan restaurant berlin, vegan burger berlin, plant based food berlin, kreuzberg restaurant, vegan salad, seitan burger, quinoa burger, vegan food delivery berlin, best vegan restaurant kreuzberg",
     "canonical": "https://www.liaskitchen.de/",
+    "image": "https://www.liaskitchen.de/fruitbasket-logo-header.svg",
     "openGraph": {
       "type": "website",
       "locale": "en",
       "url": "https://liaskitchen.de/",
-      "siteName": "Lias kitchen"
+      "siteName": "Lia's Kitchen",
+      "image": "https://www.liaskitchen.de/fruitbasket-logo-header.svg",
+      "imageWidth": 1200,
+      "imageHeight": 630
     }
   },
   "jsonLd": {
     "type": "Restaurant",
     "url": "https://liaskitchen.de/",
     "name": "Lia's Kitchen",
+    "image": [
+      "https://www.liaskitchen.de/fruitbasket-logo-header.svg",
+      "https://www.liaskitchen.de/menu/classic-chicken-burger.png",
+      "https://www.liaskitchen.de/menu/quinoa-berries-salad.png"
+    ],
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Urbanstraße 32",
@@ -256,8 +270,8 @@
       "latitude": 52.49152889313925,
       "longitude": 13.413768238948785
     },
-    "telephone": "",
-    "servesCuisine": "Vegan",
+    "telephone": "+49-163-4648436",
+    "servesCuisine": ["Vegan", "Plant-Based", "Vegetarian"],
     "priceRange": "€",
     "openingHoursSpecification": [
       {
@@ -275,7 +289,7 @@
         "closes": "22:00"
       }
     ],
-    "menu": "https://www.liaskitchen.de/de#menu",
+    "menu": "https://www.liaskitchen.de/#menu",
     "acceptsReservations": "True"
   }
 }

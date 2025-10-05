@@ -1,19 +1,22 @@
+'use client';
+
 import Image from "next/image";
-import { useRouter } from "next/router";
 import data from "../data.json";
 import Link from "next/link";
+import { useLocale } from "./LocaleProvider";
+import { LocalesI } from "@/types/locale";
 
 export default function Delivery() {
-  const routerLang = useRouter();
-  const { locale = "en" } = routerLang;
+  const { locale } = useLocale();
+  const lang = locale as keyof LocalesI;
   const { i8n } = data;
   return (
     <section
       id="delivery"
-      className="flex flex-col items-center justify-center md:mt-20"
+      className="flex flex-col items-center justify-center"
     >
       <p className='text-black text-3xl font-["Annie_Use_Your_Telescope"] mb-2 mt-12 md:mt-0'>
-        {locale === "de" ? i8n.order.de : i8n.order.en}:
+        {i8n.order[lang]}:
       </p>
       <Link
         className="md:mb-16 p-2 bg-secondary rounded shadow-sm shadow-slate-500 hover:shadow-md"
