@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import cow from "../public/cow.svg";
 import tripadvisor from "../public/tripadvisor.svg";
+import menuweb from "../public/menuweb.svg";
 
 export default function SocialMediaIcons() {
   return (
@@ -24,6 +25,14 @@ export default function SocialMediaIcons() {
           target="_blank"
         >
           <Image priority src={cow} alt="Happy Cow" />
+        </Link>
+        <Link
+          className="w-[17%]"
+          rel="noopener noreferrer"
+          href={"https://menuweb.de/restaurant/lias-kitchen-berlin"}
+          target="_blank"
+        >
+          <Image priority src={menuweb} alt="Menuweb" />
         </Link>
       </div>
     </>
