@@ -10,12 +10,13 @@ type ScrollLinkProps = AnchorProps & LinkProps & PropsWithChildren;
 // component definition
 const ScrollLink = ({ children, ...props }: ScrollLinkProps) => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    e.preventDefault();
     //remove everything before the hash
     const targetId = e.currentTarget.href.replace(/.*\#/, "");
     const elem = document.getElementById(targetId);
 
     if (elem) {
+      // Only prevent default if the element exists on the current page
+      e.preventDefault();
       const elementPosition = elem.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - 100; // 100px offset for navbar
 
@@ -24,6 +25,7 @@ const ScrollLink = ({ children, ...props }: ScrollLinkProps) => {
         behavior: "smooth",
       });
     }
+    // If element doesn't exist, let the Link navigate normally to the href
   };
   return (
     <Link {...props} onClick={handleScroll}>

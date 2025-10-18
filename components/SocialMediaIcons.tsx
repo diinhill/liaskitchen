@@ -2,11 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import cow from "../public/cow.svg";
 import tripadvisor from "../public/tripadvisor.svg";
+import menuweb from "../public/menuweb.png";
 
 export default function SocialMediaIcons() {
   return (
     <>
-      <div className="flex justify-center gap-2 mt-2">
+      <div className="flex justify-center items-center gap-2 mt-2">
         <Link
           className="w-[17%]"
           rel="noopener noreferrer"
@@ -24,6 +25,14 @@ export default function SocialMediaIcons() {
           target="_blank"
         >
           <Image priority src={cow} alt="Happy Cow" />
+        </Link>
+        <Link
+          className="w-[10%]"
+          rel="noopener noreferrer"
+          href={"https://menuweb.menu/restaurants/berlin/lias-kitchen"}
+          target="_blank"
+        >
+          <Image priority src={menuweb} alt="Menuweb" />
         </Link>
       </div>
     </>
