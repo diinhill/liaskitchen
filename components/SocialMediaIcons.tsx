@@ -26,14 +26,14 @@ export default function SocialMediaIcons() {
         >
           <Image priority src={cow} alt="Happy Cow" />
         </Link>
-        <Link
+        {/* <Link
           className="w-[10%]"
           rel="noopener noreferrer"
           href={"https://menuweb.menu/restaurants/berlin/lias-kitchen"}
           target="_blank"
         >
           <Image priority src={menuweb} alt="Menuweb" />
-        </Link>
+        </Link> */}
       </div>
     </>
   );
