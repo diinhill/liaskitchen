@@ -75,7 +75,7 @@
         "de": "Portobello- und Champignon-Patty mit gerösteten Tomaten, veganem Mozzarella & Pesto.",
         "en": "Portobello-champignons patty with roasted tomato, vegan mozzarella & pesto sauce."
       },
-      "image": "/menu/placeholder.svg"
+      "image": "/menu/mushroom-pesto-burger.png"
     },
     {
       "id": 5,
@@ -275,7 +275,7 @@
         "en": "Cheesecake"
       },
       "price": 4.5,
-      "image": "/menu/placeholder.svg"
+      "image": "/menu/cheesecake.png"
     }
   ]
 }
