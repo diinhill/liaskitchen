@@ -132,7 +132,8 @@ export default defineConfig({
                   { type: 'string', name: 'en', label: 'English', ui: { component: 'textarea' } },
                 ],
               },
-              { type: 'image', name: 'image', label: 'Image', required: true },
+              // Optional: items without an image fall back to /menu/placeholder.svg (see app/page.tsx).
+              { type: 'image', name: 'image', label: 'Image (optional)' },
             ],
           },
         ],

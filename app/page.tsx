@@ -1,12 +1,14 @@
 import client from "../tina/__generated__/client";
 import HomeClient from "../components/HomeClient";
 import type { MenuItemData, MenuCategoryData } from "../components/Menu";
+import { PLACEHOLDER_IMAGE } from "../components/menuImage";
 
 // Tina Cloud's content API rewrites repo media paths ("/menu/x.png") to its own
 // CDN ("https://assets.tina.io/<clientId>/x.png"). Our images live in the repo
 // (public/menu, served by Vercel's CDN), so map them back to the local path.
 const TINA_ASSETS = /^https:\/\/assets\.tina\.io\/[^/]+\//;
-function toLocalImage(src: string): string {
+function toLocalImage(src: string | null | undefined): string {
+  if (!src) return PLACEHOLDER_IMAGE;
   return TINA_ASSETS.test(src) ? `/menu/${src.replace(TINA_ASSETS, "")}` : src;
 }
 
