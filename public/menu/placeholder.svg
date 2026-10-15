@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300" fill="none">
+  <rect width="300" height="300" rx="24" fill="#6BB8D6" fill-opacity="0.25"/>
+  <circle cx="150" cy="130" r="60" stroke="#581B34" stroke-width="4" stroke-dasharray="6 6" fill="#FFFFFF" fill-opacity="0.3"/>
+  <!-- Cloche / Plate icon -->
+  <path d="M110 145 C110 110, 190 110, 190 145 Z" fill="#581B34" fill-opacity="0.8"/>
+  <line x1="102" y1="148" x2="198" y2="148" stroke="#581B34" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="150" cy="108" r="6" fill="#581B34"/>
+  <!-- Text -->
+  <text x="150" y="215" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#581B34">
+    Photo coming soon
+  </text>
+  <text x="150" y="235" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#581B34" fill-opacity="0.75">
+    Foto folgt in Kürze
+  </text>
+</svg>

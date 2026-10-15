@@ -15,6 +15,12 @@ type MenuItem = {
   key?: number;
 };
 
+const formatPrice = (value: number, lang: keyof LocalesI) =>
+  new Intl.NumberFormat(lang === "de" ? "de-DE" : "en-IE", {
+    style: "currency",
+    currency: "EUR",
+  }).format(value);
+
 const MenuItem = ({ item }: { item: MenuItem }) => {
   const { locale } = useLocale();
   const lang = locale as keyof LocalesI;
@@ -27,10 +33,11 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
         <div className="flex justify-center -mt-44 group-hover:translate-y-[-30px]">
           <Image
             src={image}
-            alt={`${name[lang]} - Vegan ${description ? 'burger' : 'side'} at Lia's Kitchen Berlin`}
+            alt={`${name[lang]} - Vegan ${description ? 'burger' : 'dish'} at Lia's Kitchen Berlin`}
             width={300}
             height={300}
             loading="lazy"
+            unoptimized={image.endsWith(".svg")}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             quality={85}
             className="group-hover:translate-x-[-10px] group-hover:translate-y-[-20px] group-hover:rotate-[-5deg] group-hover:scale-[1.1]"
@@ -44,7 +51,7 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
                 {name[lang]}
               </h2>
               <h3 className="text-3xl text-black group-hover:text-[#7ecbe9b5]">
-                {price}
+                {formatPrice(price, lang)}
               </h3>
             </div>
           ) : (
@@ -53,7 +60,7 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
                 {name[lang]}
               </h2>
               <h3 className="text-2xl text-black group-hover:text-3xl">
-                {price}
+                {formatPrice(price, lang)}
               </h3>
             </div>
           )}

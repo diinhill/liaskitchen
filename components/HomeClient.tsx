@@ -3,7 +3,7 @@
 import styles from "@/styles/Home.module.css";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
-import Menu, { MenuItemData } from "../components/Menu";
+import Menu, { MenuItemData, MenuCategoryData } from "../components/Menu";
 import Footer from "../components/Footer";
 import { useEffect, useRef } from "react";
 import CookieConsent from "@/components/CookieConsent";
@@ -11,7 +11,13 @@ import JsonLd from "@/components/JsonLd";
 import DeliverReserve from "@/components/DeliverReserve";
 import ReservationWidget from "@/components/ReservationWidget";
 
-export default function HomeClient({ menu }: { menu: MenuItemData[] }) {
+export default function HomeClient({
+  menu,
+  categories,
+}: {
+  menu: MenuItemData[];
+  categories?: MenuCategoryData[];
+}) {
   const menuRef = useRef<null | HTMLDivElement>(null);
   const executeScroll = () =>
     menuRef?.current &&
@@ -30,7 +36,7 @@ export default function HomeClient({ menu }: { menu: MenuItemData[] }) {
         <Navbar />
         <Header />
         <div className="mt-52 absolute" ref={menuRef} />
-        <Menu items={menu} />
+        <Menu items={menu} categories={categories} />
         <DeliverReserve />
         <Footer />
       </div>

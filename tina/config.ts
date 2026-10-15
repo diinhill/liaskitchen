@@ -46,6 +46,50 @@ export default defineConfig({
         fields: [
           {
             type: 'object',
+            name: 'categories',
+            label: 'Categories',
+            list: true,
+            ui: {
+              itemProps: (item) => ({
+                label: item?.name?.en || item?.id || 'New category',
+              }),
+            },
+            fields: [
+              {
+                type: 'string',
+                name: 'id',
+                label: 'Category Key',
+                required: true,
+                options: [
+                  { value: 'burgers', label: 'Homemade Burgers' },
+                  { value: 'chicken', label: "Chi'ken Burgers" },
+                  { value: 'salads', label: 'Salads' },
+                  { value: 'sides', label: 'Sides' },
+                  { value: 'dessert', label: 'Dessert' },
+                ],
+              },
+              {
+                type: 'object',
+                name: 'name',
+                label: 'Name',
+                fields: [
+                  { type: 'string', name: 'de', label: 'German', required: true },
+                  { type: 'string', name: 'en', label: 'English', required: true },
+                ],
+              },
+              {
+                type: 'object',
+                name: 'note',
+                label: 'Note / Sub-header (optional)',
+                fields: [
+                  { type: 'string', name: 'de', label: 'German', ui: { component: 'textarea' } },
+                  { type: 'string', name: 'en', label: 'English', ui: { component: 'textarea' } },
+                ],
+              },
+            ],
+          },
+          {
+            type: 'object',
             name: 'items',
             label: 'Menu items',
             list: true,
@@ -56,6 +100,19 @@ export default defineConfig({
             },
             fields: [
               { type: 'number', name: 'id', label: 'ID (unique, do not reuse)', required: true },
+              {
+                type: 'string',
+                name: 'category',
+                label: 'Category',
+                required: true,
+                options: [
+                  { value: 'burgers', label: 'Homemade Burgers' },
+                  { value: 'chicken', label: "Chi'ken Burgers" },
+                  { value: 'salads', label: 'Salads' },
+                  { value: 'sides', label: 'Sides' },
+                  { value: 'dessert', label: 'Dessert' },
+                ],
+              },
               {
                 type: 'object',
                 name: 'name',
