@@ -1,14 +1,20 @@
-import { useState } from "react";
-import data from "../data.json";
 import MenuItem from "./MenuItem";
 
-export default function Menu() {
+export type MenuItemData = {
+  id: number;
+  name: { de: string; en: string };
+  price: number;
+  description?: { de: string; en: string };
+  image: string;
+};
+
+export default function Menu({ items }: { items: MenuItemData[] }) {
   // const [expend, setExpend] = useState(0)
   return (
     <section id="menu" className="bg-secondary w-screen md:w-auto lg:w-auto">
       <div className="flex justify-center">
         <div className="w-[95%] flex flex-wrap justify-center relative items-center sm:gap-10 md:gap-16 lg:gap-20 xl:gap-24 2xl:gap-32">
-          {data.menu.map((menuItem) => (
+          {items.map((menuItem) => (
             <div
               // onPointerDown={() => setExpend(menuItem.id)}
               key={menuItem.id}

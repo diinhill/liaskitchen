@@ -1,46 +1,31 @@
-'use client';
+import client from "../tina/__generated__/client";
+import HomeClient from "../components/HomeClient";
+import type { MenuItemData } from "../components/Menu";
 
-import styles from "@/styles/Home.module.css";
-import Header from "../components/Header";
-import Navbar from "../components/Navbar";
-import Menu from "../components/Menu";
-import Footer from "../components/Footer";
-import { useEffect, useRef } from "react";
-import CookieConsent from "@/components/CookieConsent";
-import JsonLd from "@/components/JsonLd";
-import DeliverReserve from "@/components/DeliverReserve";
-import ReservationWidget from "@/components/ReservationWidget";
+export default async function Home() {
+  const { data } = await client.queries.menu({ relativePath: "menu.json" });
 
-export default function Home() {
-  const menuRef = useRef<null | HTMLDivElement>(null);
-  const executeScroll = () =>
-    menuRef?.current &&
-    menuRef.current.scrollIntoView({
-      block: "center",
-      behavior: "smooth",
-    });
-
-  useEffect(() => {
-    executeScroll();
-  }, []);
-
-  return (
-    <main className={styles.main}>
-      <div className={styles.noiseTexture}>
-        <Navbar />
-        <Header />
-        <div className="mt-52 absolute" ref={menuRef} />
-        <Menu />
-        <DeliverReserve />
-        <Footer />
-      </div>
-
-      <div className={styles.containerBackToTopButton}>
-        <a className={styles.backToTopButton} href="#" />
-      </div>
-
-      <CookieConsent />
-      <JsonLd />
-    </main>
+  // Tina returns `null` for empty optional objects; the UI expects them absent.
+  const menu: MenuItemData[] = (data.menu.items ?? []).flatMap((item) =>
+    item
+      ? [
+          {
+            id: item.id,
+            name: { de: item.name?.de ?? "", en: item.name?.en ?? "" },
+            price: item.price,
+            image: item.image,
+            ...(item.description?.de || item.description?.en
+              ? {
+                  description: {
+                    de: item.description?.de ?? "",
+                    en: item.description?.en ?? "",
+                  },
+                }
+              : {}),
+          },
+        ]
+      : []
   );
+
+  return <HomeClient menu={menu} />;
 }
