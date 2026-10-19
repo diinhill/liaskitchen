@@ -5,6 +5,7 @@ import Image from "next/image";
 import MenuItemDescription from "./MenuItemDescription";
 import { LocalesI } from "@/types/locale";
 import { useLocale } from "./LocaleProvider";
+import { PLACEHOLDER_IMAGE } from "./menuImage";
 
 type MenuItem = {
   id: number;
@@ -15,22 +16,32 @@ type MenuItem = {
   key?: number;
 };
 
+const formatPrice = (value: number, lang: keyof LocalesI) =>
+  new Intl.NumberFormat(lang === "de" ? "de-DE" : "en-IE", {
+    style: "currency",
+    currency: "EUR",
+  }).format(value);
+
 const MenuItem = ({ item }: { item: MenuItem }) => {
   const { locale } = useLocale();
   const lang = locale as keyof LocalesI;
 
   const { description, name, image, price } = item;
+  // Falls back to the placeholder if the image file is missing (e.g. deleted in the CMS media library).
+  const [src, setSrc] = useState(image || PLACEHOLDER_IMAGE);
 
   return (
     <div className="group relative flex justify-center items-center w-[350px] h-[350px] bg-[#7ECBE9] rounded-xl shadow-[#366477] shadow-md transition duration-300 ease-in-out hover:w-[351] hover:h-[351px]">
       <div>
         <div className="flex justify-center -mt-44 group-hover:translate-y-[-30px]">
           <Image
-            src={image}
-            alt={`${name[lang]} - Vegan ${description ? 'burger' : 'side'} at Lia's Kitchen Berlin`}
+            src={src}
+            alt={`${name[lang]} - Vegan ${description ? 'burger' : 'dish'} at Lia's Kitchen Berlin`}
             width={300}
             height={300}
             loading="lazy"
+            unoptimized={src.endsWith(".svg")}
+            onError={() => src !== PLACEHOLDER_IMAGE && setSrc(PLACEHOLDER_IMAGE)}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             quality={85}
             className="group-hover:translate-x-[-10px] group-hover:translate-y-[-20px] group-hover:rotate-[-5deg] group-hover:scale-[1.1]"
@@ -44,7 +55,7 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
                 {name[lang]}
               </h2>
               <h3 className="text-3xl text-black group-hover:text-[#7ecbe9b5]">
-                {price}
+                {formatPrice(price, lang)}
               </h3>
             </div>
           ) : (
@@ -53,7 +64,7 @@ const MenuItem = ({ item }: { item: MenuItem }) => {
                 {name[lang]}
               </h2>
               <h3 className="text-2xl text-black group-hover:text-3xl">
-                {price}
+                {formatPrice(price, lang)}
               </h3>
             </div>
           )}

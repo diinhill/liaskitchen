@@ -1,0 +1,281 @@
+{
+  "categories": [
+    {
+      "id": "burgers",
+      "name": {
+        "de": "Hausgemachte Burger",
+        "en": "Homemade Burgers"
+      },
+      "note": {
+        "de": "Serviert im Brioche-Brötchen mit veganer Mayo, Salat & Gemüse.\nExtras: \"NoKäse\" / Jalapenos - 1,00 €",
+        "en": "Served in a brioche bun with vegan mayo, lettuce & veggies.\nExtras: cheeze or jalapeños - 1,00 €"
+      }
+    },
+    {
+      "id": "chicken",
+      "name": {
+        "de": "Chi'ken Burgers",
+        "en": "Chi'ken Burgers"
+      },
+      "note": {
+        "de": "Unsere Chi'ken-Burger werden aus hausgemachtem Seitan zubereitet und im Brioche-Brötchen mit veganer Mayo und Rucola serviert.",
+        "en": "Our Chi'ken burgers are made with homemade seitan and served in a brioche bun with vegan mayo and rocket."
+      }
+    },
+    {
+      "id": "salads",
+      "name": {
+        "de": "Große Salate",
+        "en": "Big Salads"
+      }
+    },
+    {
+      "id": "sides",
+      "name": {
+        "de": "Beilagen",
+        "en": "Sides"
+      },
+      "note": {
+        "de": "Dips: Mayo / Aioli / Ketchup / BBQ / BBQ-Senf\n2 pro Gericht",
+        "en": "Dips: mayo / aioli / ketchup / BBQ / BBQ-Mustard\n2 per dish"
+      }
+    },
+    {
+      "id": "dessert",
+      "name": {
+        "de": "Dessert",
+        "en": "Dessert"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": 7,
+      "category": "burgers",
+      "name": {
+        "de": "Smokey BBQ Mushroom Burger",
+        "en": "Smokey BBQ Mushroom Burger"
+      },
+      "price": 9.2,
+      "description": {
+        "de": "Portobello- und Champignon-Patty mit Ahorn-geräucherter BBQ-Sauce.",
+        "en": "Portobello and champignon patty with maple-smoked BBQ sauce."
+      },
+      "image": "/menu/smokey-bbq-mushroom-burger.png"
+    },
+    {
+      "id": 17,
+      "category": "burgers",
+      "name": {
+        "de": "Mushroom Pesto Burger",
+        "en": "Mushroom Pesto Burger"
+      },
+      "price": 10.9,
+      "description": {
+        "de": "Portobello- und Champignon-Patty mit gerösteten Tomaten, veganem Mozzarella & Pesto.",
+        "en": "Portobello-champignons patty with roasted tomato, vegan mozzarella & pesto sauce."
+      },
+      "image": "/menu/mushroom-pesto-burger.png"
+    },
+    {
+      "id": 5,
+      "category": "burgers",
+      "name": {
+        "de": "Chili Bean Burger",
+        "en": "Chili Bean Burger"
+      },
+      "price": 8.8,
+      "description": {
+        "de": "Schwarzes-Bohnen-Patty mit süß-scharfer Chilisauce.",
+        "en": "Black bean patty, spicy homemade chilli sauce."
+      },
+      "image": "/menu/chili-bean-burger.png"
+    },
+    {
+      "id": 3,
+      "category": "burgers",
+      "name": {
+        "de": "Quinoa-Linsen Burger",
+        "en": "Quinoa-Lentils Burger"
+      },
+      "price": 9.9,
+      "description": {
+        "de": "Quinoa-Linsen-Patty mit cremiger Erdnusssauce.",
+        "en": "Quinoa-lentils patty with a delicious creamy peanut sauce."
+      },
+      "image": "/menu/quinoa-lentil-burger.png"
+    },
+    {
+      "id": 4,
+      "category": "burgers",
+      "name": {
+        "de": "Queen Noa Linsen Burger",
+        "en": "Queen'Noa-Lentils Burger"
+      },
+      "price": 10.9,
+      "description": {
+        "de": "Quinoa-Linsen-Patty mit gegrilltem, mariniertem Portobello und Ahorn-geräucherter BBQ-Sauce.",
+        "en": "Quinoa-lentils patty, marinated grilled portobello mushroom, with a maple-smoked BBQ sauce."
+      },
+      "image": "/menu/queen'noa-lentils-burger.png"
+    },
+    {
+      "id": 6,
+      "category": "burgers",
+      "name": {
+        "de": "Oyster & Shiitake Mushroom Burger",
+        "en": "Oyster-Shiitake Mushroom Burger"
+      },
+      "price": 9.9,
+      "description": {
+        "de": "Glutenfreies Patty aus Linsen, Austernpilzen und Shiitake-Pilzen, mit eingelegten Zwiebeln und BBQ-Senf-Sauce.",
+        "en": "Gluten-free patty made from lentils, oyster mushrooms, and shiitake mushrooms, topped with pickled onions and BBQ mustard sauce."
+      },
+      "image": "/menu/oyster-shiitake-burger.png"
+    },
+    {
+      "id": 1,
+      "category": "chicken",
+      "name": {
+        "de": "Chi'ken Burger Classic",
+        "en": "Chi'ken Burger Classic"
+      },
+      "price": 9.9,
+      "description": {
+        "de": "Mit veganem Feta, gerösteten marinierten Paprika und süß-scharfer Chilisauce.",
+        "en": "with vegan feta cheeze, roasted marinated peppers, sweet & spicy chili sauce."
+      },
+      "image": "/menu/classic-chicken-burger.png"
+    },
+    {
+      "id": 2,
+      "category": "chicken",
+      "name": {
+        "de": "Chi'ken Guacamole Burger",
+        "en": "Chi'ken Guacamole Burger"
+      },
+      "price": 9.9,
+      "description": {
+        "de": "Mit Guacamole und eingelegten Zwiebeln.",
+        "en": "with guacamole, pickled onions."
+      },
+      "image": "/menu/chicken-guacamole-burger.png"
+    },
+    {
+      "id": 8,
+      "category": "chicken",
+      "name": {
+        "de": "Chi'ken Burger Blue Cheeze",
+        "en": "Chi'ken Burger Blue Cheeze"
+      },
+      "price": 9.9,
+      "description": {
+        "de": "Mit veganem Blauschimmel-Cheeze und karamellisierten Zwiebeln.",
+        "en": "with vegan Blue Cheeze, caramelised onions."
+      },
+      "image": "/menu/blue-cheese-burger.png"
+    },
+    {
+      "id": 9,
+      "category": "salads",
+      "name": {
+        "de": "Quinoa, Beeren & Nüsse",
+        "en": "Quinoa, Berries & Nuts"
+      },
+      "price": 10.9,
+      "description": {
+        "de": "Bunter Quinoa, Blattsalat, Goji-Beeren, Cranberrys, Granatapfel, Pekannüsse, Walnüsse, Radieschen, Frühlingszwiebeln und getrocknete Tomaten. Serviert mit Balsamico-Vinaigrette.",
+        "en": "Colourful quinoa, mixed leaves, goji berries, cranberries, pomegranate, pecans, walnuts, radish, spring onions, and sun-dried tomatoes. Served with balsamic vinaigrette."
+      },
+      "image": "/menu/quinoa-berries-salad.png"
+    },
+    {
+      "id": 10,
+      "category": "salads",
+      "name": {
+        "de": "Chi'ken Strips Salat",
+        "en": "Chi'ken Stripes Salad"
+      },
+      "price": 9.9,
+      "description": {
+        "de": "Knusprige hausgemachte Seitan-Strips mit Salat, Blattsalat, Cherrytomaten, Gurke, roten Zwiebeln, Karotten und Radieschen. Serviert mit weißer Balsamico-Vinaigrette.",
+        "en": "Crunchy homemade fried seitan strips with lettuce, mixed leaves, cherry tomatoes, cucumber, red onion, carrots, and radish. Served with white balsamic vinaigrette."
+      },
+      "image": "/menu/chicken-salad.png"
+    },
+    {
+      "id": 11,
+      "category": "salads",
+      "name": {
+        "de": "Lia's Salat",
+        "en": "Lia's Salad"
+      },
+      "price": 10.9,
+      "description": {
+        "de": "Getrocknete Feigen, Aprikosen und Pflaumen mit Blattsalat, Pekannüssen, Walnüssen und hausgemachtem veganem Feta. Serviert mit Orangen-Granatapfel-Vinaigrette.",
+        "en": "Dried figs, apricots, and plums with mixed leaves, pecans, walnuts, and homemade vegan feta cheeze. Served with orange-pomegranate vinaigrette."
+      },
+      "image": "/menu/lias-salad.png"
+    },
+    {
+      "id": 12,
+      "category": "sides",
+      "name": {
+        "de": "Pommes",
+        "en": "Fries"
+      },
+      "price": 4.5,
+      "image": "/menu/french-fries.png"
+    },
+    {
+      "id": 13,
+      "category": "sides",
+      "name": {
+        "de": "Süßkartoffel-Pommes",
+        "en": "Sweet potato fries"
+      },
+      "price": 5.5,
+      "image": "/menu/sweet-potato-fries.png"
+    },
+    {
+      "id": 14,
+      "category": "sides",
+      "name": {
+        "de": "Nuggets",
+        "en": "Nuggets"
+      },
+      "price": 6,
+      "image": "/menu/nuggets-mit-bbq-dip.png"
+    },
+    {
+      "id": 15,
+      "category": "sides",
+      "name": {
+        "de": "Panierter Blumenkohl",
+        "en": "Breaded Cauliflower"
+      },
+      "price": 6,
+      "image": "/menu/cauli-v3.png"
+    },
+    {
+      "id": 16,
+      "category": "sides",
+      "name": {
+        "de": "Coleslaw",
+        "en": "Coleslaw"
+      },
+      "price": 4,
+      "image": "/menu/krautsalat.png"
+    },
+    {
+      "id": 18,
+      "category": "dessert",
+      "name": {
+        "de": "Cheesecake",
+        "en": "Cheesecake"
+      },
+      "price": 4.5,
+      "image": "/menu/cheesecake.png"
+    }
+  ]
+}
